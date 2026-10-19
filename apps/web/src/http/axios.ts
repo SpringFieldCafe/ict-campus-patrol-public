@@ -74,5 +74,7 @@ instance.interceptors.response.use(response => response.data, async (error) => {
 
 /** FastAPI returns the payload directly, without the template's mock code/data envelope. */
 export function request<T>(config: AxiosRequestConfig): Promise<T> {
-  return instance.request<T, T>(config)
+  // The response interceptor returns data, while Axios 1.20 keeps a
+  // conditional response type unresolved for generic T.
+  return instance.request<T, T>(config) as Promise<T>
 }

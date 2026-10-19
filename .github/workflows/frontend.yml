@@ -1,0 +1,50 @@
+# Adapted from GitHub actions/starter-workflows/ci/node.js.yml (MIT, Copyright 2020 GitHub).
+# Source commit: 1830845916d09bee7327d12cbf1e387edfdb9846
+# Changes: pnpm 10.34.0, apps/web, Node 24, fixed Action commits, project test/build scripts.
+# License: docs/upstream/github-pages-starter-LICENSE; provenance: docs/FRONTEND_CI.md.
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests on Node.js 24
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Frontend checks
+
+on:
+  push:
+    branches: [ main ]
+    paths: ["apps/web/**", ".github/workflows/frontend.yml"]
+  pull_request:
+    branches: [ main ]
+    paths: ["apps/web/**", ".github/workflows/frontend.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: apps/web
+
+    strategy:
+      matrix:
+        node-version: [24.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+    - uses: pnpm/action-setup@f40ffcd9367d9f12939873eb1018b921a783ffaa # v4
+      with:
+        version: 10.34.0
+        package_json_file: apps/web/package.json
+        run_install: false
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+        cache-dependency-path: apps/web/pnpm-lock.yaml
+    - run: pnpm install --frozen-lockfile
+    - run: pnpm build
+    - run: pnpm test:run

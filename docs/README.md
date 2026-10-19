@@ -11,3 +11,5 @@
 目录中的历史验证 JSON 记录原开发环境发生的检查，不代表该公开子集已包含所有执行实现。`index.html` 是无构建静态入口；GitHub Pages 由 GitHub 官方 Actions 模板从 `main` 的 `docs/` 目录自动发布。
 
 - [应用依赖告警](DEPENDENCY_STATUS.md)：发布后 GitHub 快照，单元测试通过不等同于无漏洞。
+
+- [前端依赖修复](DEPENDENCY_REPAIR.md)、[前端回归CI来源](FRONTEND_CI.md)。

@@ -1,0 +1,135 @@
+```json
+{
+  "name": "campus-patrol-web",
+  "type": "module",
+  "version": "5.2.0",
+  "description": "受限区域现场查看任务工作台，基于 V3 Admin Vite 改造",
+  "author": "pany <939630029@qq.com> (https://github.com/pany-ang)",
+  "repository": "https://github.com/un-pany/v3-admin-vite",
+  "scripts": {
+    "dev": "vite",
+    "build:staging": "vue-tsc && vite build --mode staging",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint --fix",
+    "test": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.3.2",
+    "axios": "1.20.0",
+    "dayjs": "1.11.21",
+    "element-plus": "2.14.2",
+    "lodash-es": "4.18.1",
+    "mitt": "3.0.1",
+    "normalize.css": "8.0.1",
+    "nprogress": "0.2.0",
+    "path-browserify": "1.0.1",
+    "path-to-regexp": "8.4.2",
+    "pinia": "3.0.4",
+    "screenfull": "6.0.2",
+    "vue": "3.5.42",
+    "vue-router": "5.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "9.1.0",
+    "@types/lodash-es": "4.17.12",
+    "@types/node": "26.1.1",
+    "@types/nprogress": "0.2.3",
+    "@types/path-browserify": "1.0.3",
+    "@vitejs/plugin-vue": "6.0.7",
+    "@vue/test-utils": "2.4.11",
+    "eslint": "10.6.0",
+    "eslint-plugin-format": "2.0.1",
+    "happy-dom": "20.10.6",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.8",
+    "sass-embedded": "1.78.0",
+    "typescript": "5.9.3",
+    "unocss": "66.7.5",
+    "unplugin-auto-import": "21.0.0",
+    "unplugin-svg-component": "0.12.6",
+    "unplugin-vue-components": "32.1.0",
+    "vite": "7.3.6",
+    "vite-svg-loader": "5.1.1",
+    "vitest": "4.1.11",
+    "vue-tsc": "3.3.7"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "private": true,
+  "packageManager": "pnpm@10.34.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "tinypool@<2.1.2": "2.1.2",
+      "source-map-js@<1.2.2": "1.2.2",
+      "postcss-selector-parser@<7.1.6": "7.1.6",
+      "js-yaml@>=4.0.0 <4.3.2": "4.3.2",
+      "svgo@>=2.0.0 <2.8.4": "2.8.4",
+      "svgo@>=3.0.0 <3.3.5": "3.3.5",
+      "@xmldom/xmldom@>=0.7.0 <0.8.15": "0.8.15",
+      "baseline-browser-mapping@>=2.0.0 <2.11.0": "2.11.0",
+      "browserslist@>=4.0.0 <4.28.7": "4.28.7",
+      "nanoid@>=3.0.0 <3.3.18": "3.3.18",
+      "postcss@>=8.0.0 <8.5.23": "8.5.23",
+      "glob@>=10.2.0 <10.5.0": "10.5.0",
+      "katex@>=0.11.0 <0.18.2": "0.18.2",
+      "brace-expansion@>=1.0.0 <1.1.21": "1.1.21",
+      "brace-expansion@>=2.0.0 <2.1.7": "2.1.7",
+      "brace-expansion@>=4.0.0 <5.0.12": "5.0.12"
+    }
+  }
+}
+```
+
+```json
+{
+  "delete_files": [
+    "apps/web/src/plugins/vxe-table.ts",
+    "apps/web/src/pages/demo/vxe-table/index.vue",
+    "apps/web/src/common/assets/styles/vxe-table.scss",
+    "apps/web/src/common/assets/styles/vxe-table.css"
+  ],
+  "review_issues": [
+    "vxe-table 上游 GHSA-89fp-f5mx-748x 仍无补丁版本（first_patched_version=null），上游 PR #2791 仍 open；本次属移除未使用的脆弱组件，提交信息与文档不得写成『升级已修复 Vxe 漏洞』。",
+    "项目锁 vxe-table 4.6.25，但业务 router 仅 console/history/project 且 dynamic=false，plugins/index.ts、main.ts、styles/index.scss 均不加载 Vxe；删除四文件后需全局 grep（大小写不敏感）确认 types 目录与入口无残留 vxe 引用。",
+    "common/apis/tables 仍被 ElementPlus 示例使用，禁止误删；它不在本次删除清单内。",
+    "dom-zindex 与 xe-utils 是 vxe-table 的传递依赖，不在 package.json 直接依赖中；由 pnpm 10.34.0 重新解析锁后自动移除，禁止手工编辑 pnpm-lock.yaml 具体条目，安装必须 frozen-lockfile。",
+    "braces@3.0.3（GHSA-vfj7-8cjw-p6xm，路径 unplugin-svg-component>fast-glob>micromatch>braces）当前无修复版本：不伪造版本、不静默 audit ignore、不自制无证据安全补丁、不更换整套图标插件；报告须保留一项明确未解决告警并注明真实可达性尚未评估，不得把『静态站不加载它』写成『依赖已安全』。",
+    "katex 0.16.47 → 0.18.2 跨 0.x 小版本（构建期链路 @antfu/eslint-config>@eslint/markdown>micromark-extension-math，非运行时业务依赖），须在记录中单列兼容性风险；Codex 需核对 Markdown 数学解析/渲染 API 并完成构建验证后方可合入。",
+    "overrides 共 16 条，仅 brace-expansion@>=4.0.0 <5.0.12 → 5.0.12 为跨主版本条目（4→5），其余均在原主版本分支内精确覆盖；禁止 pnpm update --latest 全量升级，axios/vue/vitest 按指定精确版本写入。",
+    "tinypool 实际来源为 eslint-plugin-format>oxfmt，并非 Vitest 直接依赖，必须经 override 才能从 2.1.0 升至 2.1.2；验证时不得把 critical 归因于 Vitest。",
+    "新工作树必须创建独立 node_modules，绝不沿用或修改原仓 node_modules 软链接；完成后核对原仓 441 文件与依赖元数据哈希未被污染。",
+    "UPSTREAM 文档中『Vxe 资产保留』表述需更新为已移除及原因；DEPENDENCY_REPAIR.md 在验证完成前保持『尚未验证』表述，不得预填通过结果。"
+  ]
+}
+```
+
+```markdown
+# 前端依赖修复记录
+
+## 背景与计数口径
+
+公开仓 SpringFieldCafe/ict-campus-patrol-public 前端工作台收到 GitHub 61 条依赖告警，对应 41 个不同 GHSA，其中 2 条 critical 来自 tinypool；本地 pnpm audit 独立基线为 63 条（2 critical、43 high、17 moderate、1 low）。两套计数口径不同，不可混用，也不得互相推导。
+
+## 分工
+
+本文档由华为 CodeArts 主笔三项内容：apps/web/package.json 包配置（axios 1.20.0、vue 3.5.42、vitest 4.1.11，移除 vxe-table，新增 pnpm.overrides 共 16 条已核对注册表版本）；四个未使用 Vxe 文件的删除清单；依赖审查意见。实际删除、lock 解析、安装、测试与 PR 由 Codex 执行，成稿时尚未验证通过，验证结果以后续真实记录补齐，不得预填。
+
+## Vxe 处理定性
+
+vxe-table 上游 GHSA-89fp-f5mx-748x 仍无补丁版本，first_patched_version 为 null，PR #2791 仍 open。项目锁 vxe-table 4.6.25，但业务 router 仅 console/history/project，dynamic 为 false，plugins/index.ts、main.ts、styles/index.scss 均不加载 Vxe。因此本轮是移除未使用的脆弱组件及孤立传递依赖 dom-zindex、xe-utils，不是修复 Vxe 上游，不能把版本升出受影响范围当作已证明修复。common/apis/tables 仍被 ElementPlus 示例使用，保留；UPSTREAM 中“Vxe 资产保留”表述同步更新为已移除。
+
+## 未解决项与兼容风险
+
+braces@3.0.3（GHSA-vfj7-8cjw-p6xm）当前无修复版本，路径 unplugin-svg-component>fast-glob>micromatch>braces，属受控本地 SVG 构建工具。本轮不为告警归零伪造版本、不静默 audit ignore、不自制无证据安全补丁、不更换整套图标插件，预计仍保留一项明确未解决告警，真实可达性尚未评估。katex 0.16.47 → 0.18.2 跨 0.x 小版本，来自构建期链路 @antfu/eslint-config>@eslint/markdown>micromark-extension-math，非运行时业务依赖，须单列兼容性风险，由 Codex 核对 Markdown 数学解析/渲染 API 并完成构建验证。
+
+## 验证计划与边界
+
+新工作树 fix/frontend-dependency-alerts-20261019 基于 b032b03，创建独立 node_modules，绝不沿用或修改原仓软链接；以 pnpm 10.34.0、Node 24.22.0 解析，frozen-lockfile 安装，前端 22 项测试、TypeScript 与 Vite 构建、audit 前后对照、页面最小浏览器检查，并核对原仓 441 文件与依赖元数据哈希。GitHub 默认分支告警关闭以实际合入与扫描结果为准，不以分支 audit 冒充清零。GitHub Pages 仅上传 docs，不安装前端依赖，不涉及华为云服务创建；零现金预算，原私有仓与导航、仿真环境不升级，暂不运行机器人、仿真或真实视觉模型。
+```

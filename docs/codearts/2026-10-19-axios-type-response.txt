@@ -1,0 +1,7 @@
+```json
+{
+  "old": "/** FastAPI returns the payload directly, without the template's mock code/data envelope. */\nexport function request<T>(config: AxiosRequestConfig): Promise<T> {\n  return instance.request<T, T>(config)\n}",
+  "new": "/** FastAPI returns the payload directly, without the template's mock code/data envelope. */\nexport function request<T>(config: AxiosRequestConfig): Promise<T> {\n  // Single cast at this known boundary: the response interceptor returns response.data, so\n  // R=T holds at runtime, but axios 1.20 wraps the result in conditional\n  // AxiosResponseResult<T, R, ...>, which stays unresolved for a generic T (TS2322).\n  return instance.request<T, T>(config) as Promise<T>\n}",
+  "rationale": "axios 1.18.1 的 request<T, R> 直接返回 Promise<R>，request<T, T> 恰好得到 Promise<T>；1.20.0 把返回类型改为 Promise<AxiosResponseResult<T,R,D,P>>，其中 AxiosResponseResult 依赖条件 R extends AxiosResponseDefault。当 R 是调用方的泛型 T 时该条件无法立即求值，返回类型保持未收敛的延迟条件类型，因此 instance.request<T, T>(config) 不再能赋给 Promise<T>，触发 TS2322。运行时行为无需改变：响应拦截器确实返回 response.data，R=T 分支在运行时恒成立，公开契约 request<T>(config): Promise<T> 保持不变。所以只在 request 封装这一处已知边界加一次类型断言 as Promise<T>，并用注释说明依据来自拦截器返回 payload 与 axios 1.20 的条件类型；不使用 ts-ignore、不引入 any、不改 http 层其余代码，也不为绕过类型错误降级回仍有 braces 漏洞的旧版 axios。"
+}
+```

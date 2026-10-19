@@ -16,6 +16,6 @@ Package dependencies are not vendored; their separate licenses apply.
 Robot/navigation implementations, robot model assets and policy weights
 are excluded from this public subset; no redistribution rights are asserted.
 
-.github/workflows/pages.yml adapts GitHub actions/starter-workflows (MIT).
+.github/workflows/pages.yml and frontend.yml adapt GitHub actions/starter-workflows (MIT).
 Copyright (c) 2020 GitHub
-See docs/upstream/github-pages-starter-LICENSE and docs/HOSTING.md.
+See docs/upstream/github-pages-starter-LICENSE, docs/HOSTING.md and docs/FRONTEND_CI.md.

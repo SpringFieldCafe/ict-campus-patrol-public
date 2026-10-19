@@ -4,7 +4,7 @@
 
 | 内容 | 来源／版本 | 许可与保留位置 | 分发范围 |
 | --- | --- | --- | --- |
-| GitHub Pages Actions 模板 | [actions/starter-workflows](https://github.com/actions/starter-workflows/blob/22770e21c6986ed08a3aa400bdcc6a9a75ecdaf2/pages/static.yml) | MIT，Copyright 2020 GitHub；[完整许可](docs/upstream/github-pages-starter-LICENSE)、[最小修改](docs/HOSTING.md) | `.github/workflows/pages.yml`；四个 Action 本身由 GitHub 执行时获取 |
+| GitHub Actions 模板 | [actions/starter-workflows](https://github.com/actions/starter-workflows/blob/22770e21c6986ed08a3aa400bdcc6a9a75ecdaf2/pages/static.yml) | MIT，Copyright 2020 GitHub；[完整许可](docs/upstream/github-pages-starter-LICENSE)、[Pages 修改](docs/HOSTING.md)、[Node CI 来源与修改](docs/FRONTEND_CI.md) | `.github/workflows/pages.yml` 与 `frontend.yml`；Action 本身由 GitHub 执行时获取 |
 | V3 Admin Vite | [un-pany/v3-admin-vite](https://github.com/un-pany/v3-admin-vite)，5.2.0，提交 `c2c895d71d571e9c18c2453fa85469a479c79fc6` | MIT；[完整许可](apps/web/LICENSE)、[改造说明](apps/web/UPSTREAM.md)、[模板声明](apps/web/public/template-LICENSE.txt) | 改造后的前端源码及测试；不分发 node_modules |
 | FastAPI 全栈模板 | [fastapi/full-stack-fastapi-template](https://github.com/fastapi/full-stack-fastapi-template)，提交 `b1125d8839482cb7bbae603ddc6d0081bf87532e` | MIT；[完整许可](cloud/backend/third_party/fastapi-template-LICENSE)、[改造说明](cloud/backend/UPSTREAM.md) | 认证、配置、模型、会话等裁剪改造源码 |
 | 前端依赖 | Vue、Vue Router、Pinia、Element Plus、Axios、Vite、TypeScript、Vitest、UnoCSS 等，版本见 [package.json](apps/web/package.json) 与 [锁文件](apps/web/pnpm-lock.yaml) | 依赖及传递依赖按各自发行声明；以 MIT 为主，不统一替代 | 依赖声明与锁文件；安装包与构建产物不入 Git |
