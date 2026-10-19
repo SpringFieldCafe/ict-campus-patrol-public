@@ -1,0 +1,81 @@
+{
+  "checkpoint_events": [
+    {
+      "distance": 0.39794978499412537,
+      "index": 0,
+      "position_xy": [
+        0.7556412220001221,
+        -0.31409046053886414
+      ],
+      "step": 940
+    },
+    {
+      "distance": 0.3999916613101959,
+      "index": 1,
+      "position_xy": [
+        1.9071968793869019,
+        -0.13907700777053833
+      ],
+      "step": 2360
+    },
+    {
+      "distance": 0.3950052261352539,
+      "index": 2,
+      "position_xy": [
+        2.605193853378296,
+        -0.01253900770097971
+      ],
+      "step": 3150
+    }
+  ],
+  "collision": false,
+  "current_waypoint_index": 2,
+  "elapsed_s": 22.38176652500033,
+  "fallen": false,
+  "goal_reached": true,
+  "max_pitch": 0.05879414182512952,
+  "max_roll": 0.07892102335121254,
+  "min_obstacle_distance": 0.800000011920929,
+  "mode": "simulation",
+  "path_length": 2.8670268058776855,
+  "reached_indices": [
+    0,
+    1,
+    2
+  ],
+  "scene": "flat_obstacle",
+  "seed": 0,
+  "simulated_seconds": 6.301999999999528,
+  "steps": 3151,
+  "steps_requested": 30000,
+  "stop_on_goal": true,
+  "waypoints": [
+    {
+      "radius": 0.4,
+      "x": 1.0,
+      "y": 0.0
+    },
+    {
+      "radius": 0.4,
+      "x": 2.0,
+      "y": 0.25
+    },
+    {
+      "radius": 0.4,
+      "x": 3.0,
+      "y": 0.0
+    }
+  ],
+  "waypoints_reached": 3,
+  "waypoints_total": 3,
+  "model_sha256": {
+    "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+    "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+  },
+  "runtime_versions": {
+    "numpy": "1.24.4",
+    "torch": "2.0.1+cpu",
+    "mujoco": "3.2.3",
+    "python": "3.10.12"
+  }
+}

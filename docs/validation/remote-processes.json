@@ -1,0 +1,106 @@
+{
+  "started_at_utc": "2026-10-17T11:11:23.134211+00:00",
+  "checks": [
+    "judge is non-admin; coordinator has no simulation dependencies",
+    "remote executor suspends original local task admission",
+    "cut TCP link: local completion, offline rejection, history readable, exact original MP4 delivered without re-execution",
+    "remote cancellation waits for executor cleanup; incomplete recording is not exposed",
+    "operator SIGTERM cancels, delivers confirmation, disconnects and restores local admission; no surviving workers"
+  ],
+  "tasks": {
+    "outage_recovery": {
+      "task_id": "task-6493795acb7b473ba4b3896f605c2af7",
+      "state": "SUCCEEDED",
+      "execute_starts": 1,
+      "video_available": true,
+      "simulation_summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39794978499412537,
+            "index": 0,
+            "position_xy": [
+              0.7556412220001221,
+              -0.31409046053886414
+            ],
+            "step": 940
+          },
+          {
+            "distance": 0.3999916613101959,
+            "index": 1,
+            "position_xy": [
+              1.9071968793869019,
+              -0.13907700777053833
+            ],
+            "step": 2360
+          },
+          {
+            "distance": 0.3950052261352539,
+            "index": 2,
+            "position_xy": [
+              2.605193853378296,
+              -0.01253900770097971
+            ],
+            "step": 3150
+          }
+        ],
+        "collision": false,
+        "current_waypoint_index": 2,
+        "elapsed_s": 26.003651880000007,
+        "fallen": false,
+        "goal_reached": true,
+        "max_pitch": 0.05879414182512952,
+        "max_roll": 0.07892102335121254,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 2.8670268058776855,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "simulated_seconds": 6.301999999999528,
+        "steps": 3151,
+        "steps_requested": 30000,
+        "stop_on_goal": true,
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "video_sha256": "188222a0a542ec1b3610d4affedd72a8a16f32985138b2683b2b98fcba6c41bd"
+    },
+    "operator_shutdown": {
+      "task_id": "task-9beb1d9b6b7e492ead86e664b4dc1d32",
+      "state": "CANCELLED",
+      "execute_starts": 1,
+      "video_available": false,
+      "simulation_summary": null
+    },
+    "remote_cancel": {
+      "task_id": "task-25d4baa7d06e4b498dbf388c957edb12",
+      "state": "CANCELLED",
+      "execute_starts": 1,
+      "video_available": false,
+      "simulation_summary": null
+    }
+  },
+  "result": "passed",
+  "finished_at_utc": "2026-10-17T11:12:10.509918+00:00"
+}

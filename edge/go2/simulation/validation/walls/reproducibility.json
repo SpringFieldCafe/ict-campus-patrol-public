@@ -1,0 +1,156 @@
+{
+  "trials": 30,
+  "identical_trajectories": 30,
+  "cases": {
+    "checkpoints-simple-center-s00": {
+      "reference_sha256": "8c104ff7cf84d34a692a9888c806a570684cda1fa5f87158545103093a0a702e",
+      "final_sha256": "8c104ff7cf84d34a692a9888c806a570684cda1fa5f87158545103093a0a702e",
+      "identical": true
+    },
+    "checkpoints-simple-center-s01": {
+      "reference_sha256": "e7ea2ec5afa2aaec6dfcdfc0fa77f654120150f519bbf9fd49d4c762f97611d5",
+      "final_sha256": "e7ea2ec5afa2aaec6dfcdfc0fa77f654120150f519bbf9fd49d4c762f97611d5",
+      "identical": true
+    },
+    "checkpoints-simple-center-s02": {
+      "reference_sha256": "9d4d510f001dae6cc221fbcd329cfeceb513ff5c89333ca473596a2cb5c61e8b",
+      "final_sha256": "9d4d510f001dae6cc221fbcd329cfeceb513ff5c89333ca473596a2cb5c61e8b",
+      "identical": true
+    },
+    "checkpoints-simple-center-s03": {
+      "reference_sha256": "f88830f8d87148fb676d59301861784fb7db96f905e01a760d835805179bb10e",
+      "final_sha256": "f88830f8d87148fb676d59301861784fb7db96f905e01a760d835805179bb10e",
+      "identical": true
+    },
+    "checkpoints-simple-center-s04": {
+      "reference_sha256": "ce49c1e322b86a9aaf45e028fe601d0851424acb7ebf605a9276ac897bfa84fa",
+      "final_sha256": "ce49c1e322b86a9aaf45e028fe601d0851424acb7ebf605a9276ac897bfa84fa",
+      "identical": true
+    },
+    "checkpoints-simple-left-s00": {
+      "reference_sha256": "26f3dfbe3b9d4a1387f67602698ec98d620e34b20d2942b0009f46f31d1aa255",
+      "final_sha256": "26f3dfbe3b9d4a1387f67602698ec98d620e34b20d2942b0009f46f31d1aa255",
+      "identical": true
+    },
+    "checkpoints-simple-left-s01": {
+      "reference_sha256": "1fdfbd51c7bec6821c328a667c679b40196c6ee5f5c76702301325b0db3466d7",
+      "final_sha256": "1fdfbd51c7bec6821c328a667c679b40196c6ee5f5c76702301325b0db3466d7",
+      "identical": true
+    },
+    "checkpoints-simple-left-s02": {
+      "reference_sha256": "f75ecf02e89f755f114e4e6384f265598fa34fc1234f05296b36b8259dea1f1c",
+      "final_sha256": "f75ecf02e89f755f114e4e6384f265598fa34fc1234f05296b36b8259dea1f1c",
+      "identical": true
+    },
+    "checkpoints-simple-left-s03": {
+      "reference_sha256": "ce08bbd11eab04bbb68d1afdf217c4317c7670446bfc086982d9268664595228",
+      "final_sha256": "ce08bbd11eab04bbb68d1afdf217c4317c7670446bfc086982d9268664595228",
+      "identical": true
+    },
+    "checkpoints-simple-left-s04": {
+      "reference_sha256": "70bbb831bc966c2d07c5279c8e66ef8cf669a046e31605514c163f06407f627c",
+      "final_sha256": "70bbb831bc966c2d07c5279c8e66ef8cf669a046e31605514c163f06407f627c",
+      "identical": true
+    },
+    "checkpoints-simple-right-s00": {
+      "reference_sha256": "eea136872d4705673ac35a55bd409e77cafb4fec7fa461aa5325210f53d250a7",
+      "final_sha256": "eea136872d4705673ac35a55bd409e77cafb4fec7fa461aa5325210f53d250a7",
+      "identical": true
+    },
+    "checkpoints-simple-right-s01": {
+      "reference_sha256": "747517f764bc583d4ef40528b75452517cc391128172655f3222963f05f84173",
+      "final_sha256": "747517f764bc583d4ef40528b75452517cc391128172655f3222963f05f84173",
+      "identical": true
+    },
+    "checkpoints-simple-right-s02": {
+      "reference_sha256": "fa1999d56f833f9c64cdec25127700a0a444fdb947af46dd82224d14d99fdbd6",
+      "final_sha256": "fa1999d56f833f9c64cdec25127700a0a444fdb947af46dd82224d14d99fdbd6",
+      "identical": true
+    },
+    "checkpoints-simple-right-s03": {
+      "reference_sha256": "417175877c7dc58fe470a871c1f1239d57e6c7e61dab865cc84d09d48c2b6019",
+      "final_sha256": "417175877c7dc58fe470a871c1f1239d57e6c7e61dab865cc84d09d48c2b6019",
+      "identical": true
+    },
+    "checkpoints-simple-right-s04": {
+      "reference_sha256": "30b2b2c4d992b28d93ac735abc835bc90bdd7023a420564beaa059949015552b",
+      "final_sha256": "30b2b2c4d992b28d93ac735abc835bc90bdd7023a420564beaa059949015552b",
+      "identical": true
+    },
+    "checkpoints-walls-center-s00": {
+      "reference_sha256": "c4f6ac841226d789f3551e05630118a04d4599601f9f86766119dabad946a608",
+      "final_sha256": "c4f6ac841226d789f3551e05630118a04d4599601f9f86766119dabad946a608",
+      "identical": true
+    },
+    "checkpoints-walls-center-s01": {
+      "reference_sha256": "e0fed6626d28bff538e46e32aab202d9ccbd1b9533788aefccf79f3581fb8a37",
+      "final_sha256": "e0fed6626d28bff538e46e32aab202d9ccbd1b9533788aefccf79f3581fb8a37",
+      "identical": true
+    },
+    "checkpoints-walls-center-s02": {
+      "reference_sha256": "e01d77bd6d8a7563d29ab723a3684e5a804c92263e6e8ff56f0a0b56815b4588",
+      "final_sha256": "e01d77bd6d8a7563d29ab723a3684e5a804c92263e6e8ff56f0a0b56815b4588",
+      "identical": true
+    },
+    "checkpoints-walls-center-s03": {
+      "reference_sha256": "95c3d7a1979a346267b92587c5d761b1e0bb510e1139574d87a056ee896b16e0",
+      "final_sha256": "95c3d7a1979a346267b92587c5d761b1e0bb510e1139574d87a056ee896b16e0",
+      "identical": true
+    },
+    "checkpoints-walls-center-s04": {
+      "reference_sha256": "cc5b14575995d63d89d669c724f98eded0cfa335c7fc5044b686179ffd33b240",
+      "final_sha256": "cc5b14575995d63d89d669c724f98eded0cfa335c7fc5044b686179ffd33b240",
+      "identical": true
+    },
+    "checkpoints-walls-left-s00": {
+      "reference_sha256": "69e90e4fe29b228bfa116bc7eac4f5dc4f37aae6ed38ce170e95455738707208",
+      "final_sha256": "69e90e4fe29b228bfa116bc7eac4f5dc4f37aae6ed38ce170e95455738707208",
+      "identical": true
+    },
+    "checkpoints-walls-left-s01": {
+      "reference_sha256": "564bf54b7d38c10a417ba48e8ab70f900f442f998c495566504c72855e5eca07",
+      "final_sha256": "564bf54b7d38c10a417ba48e8ab70f900f442f998c495566504c72855e5eca07",
+      "identical": true
+    },
+    "checkpoints-walls-left-s02": {
+      "reference_sha256": "e71aaf9882b90030ef6c0d2ea934c66469c7e9bed64270868b8030218dc8c9fa",
+      "final_sha256": "e71aaf9882b90030ef6c0d2ea934c66469c7e9bed64270868b8030218dc8c9fa",
+      "identical": true
+    },
+    "checkpoints-walls-left-s03": {
+      "reference_sha256": "c9210ae192a9faf96e8086e471624afb4faa840828793236bb389bdb26a22601",
+      "final_sha256": "c9210ae192a9faf96e8086e471624afb4faa840828793236bb389bdb26a22601",
+      "identical": true
+    },
+    "checkpoints-walls-left-s04": {
+      "reference_sha256": "51d27c0baf9c90638a74b8e5cfa44bd1845e2cba57a702c33a8508c5400b7d41",
+      "final_sha256": "51d27c0baf9c90638a74b8e5cfa44bd1845e2cba57a702c33a8508c5400b7d41",
+      "identical": true
+    },
+    "checkpoints-walls-right-s00": {
+      "reference_sha256": "7a13eea1651a7bd40f44aaa0cf0219d618de5fce028d17b2de603a77fb904d92",
+      "final_sha256": "7a13eea1651a7bd40f44aaa0cf0219d618de5fce028d17b2de603a77fb904d92",
+      "identical": true
+    },
+    "checkpoints-walls-right-s01": {
+      "reference_sha256": "fadf41b59d6b3d86a5efe4f4659e1e7c384c720ba25ca33ece4570e7e0cc3d0a",
+      "final_sha256": "fadf41b59d6b3d86a5efe4f4659e1e7c384c720ba25ca33ece4570e7e0cc3d0a",
+      "identical": true
+    },
+    "checkpoints-walls-right-s02": {
+      "reference_sha256": "8536a8640ff26f013576459ff613593c1f30160415b5899bec8a88d1d7fc05ff",
+      "final_sha256": "8536a8640ff26f013576459ff613593c1f30160415b5899bec8a88d1d7fc05ff",
+      "identical": true
+    },
+    "checkpoints-walls-right-s03": {
+      "reference_sha256": "7ff16c04574ab208e72c24ff40d7b73fa74e4563bf4a49f933a718f3c7afbb71",
+      "final_sha256": "7ff16c04574ab208e72c24ff40d7b73fa74e4563bf4a49f933a718f3c7afbb71",
+      "identical": true
+    },
+    "checkpoints-walls-right-s04": {
+      "reference_sha256": "76488e2ec80160bb0d65c712f178291a0983a45f77f7d6ba07de9439bac2eb88",
+      "final_sha256": "76488e2ec80160bb0d65c712f178291a0983a45f77f7d6ba07de9439bac2eb88",
+      "identical": true
+    }
+  }
+}

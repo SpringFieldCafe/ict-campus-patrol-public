@@ -1,0 +1,55 @@
+{
+  "origin": "http://127.0.0.1:8000",
+  "checks": [
+    "unauthenticated redirect and failed login",
+    "real OAuth login; actual capabilities; motion disabled",
+    "browser submitted real MuJoCo task; reached goal; no simulated photo/answer",
+    "authenticated Blob video decodes in Chromium",
+    "refresh restores task and session; no JWT in localStorage",
+    "poll connection error retains evidence; manual retry recovers",
+    "history direct refresh/detail; task polling stops on leaving console",
+    "project truthfully lists cloud gaps; mobile has no page overflow",
+    "FastAPI credential expiry logs out and clears token/media view"
+  ],
+  "pageErrors": [],
+  "task": {
+    "task_id": "task-106fd51d075b4275a64ff9931216e86c",
+    "point_id": "demo-a",
+    "mode": "simulation",
+    "state": "SUCCEEDED",
+    "video_available": true,
+    "analysis_state": "NO_CAMERA_PHOTO",
+    "simulation_summary": {
+      "angular_velocity_source": "cvel",
+      "collision": false,
+      "current_waypoint_index": 0,
+      "elapsed_s": 17.0386278950009,
+      "fallen": false,
+      "goal_reached": true,
+      "max_pitch": 0.12559817588936426,
+      "max_roll": 0.05482336639872011,
+      "min_obstacle_distance": 3,
+      "path_length": 1.1228376626968384,
+      "random_obstacles": [],
+      "ray_mode": "grid2ray",
+      "scene": "himloco_flat",
+      "seed": 0,
+      "steps": 30000,
+      "stop_on_goal": true,
+      "terrain": "flat",
+      "waypoints_reached": 1,
+      "waypoints_total": 1
+    }
+  },
+  "video": {
+    "width": 640,
+    "height": 480,
+    "duration": 2.8,
+    "source": true
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "result": "passed"
+}

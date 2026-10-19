@@ -1,0 +1,26 @@
+{
+  "origin": "http://127.0.0.1:8000",
+  "checks": [
+    "unauthenticated redirect and failed login",
+    "real OAuth login; actual capabilities; motion disabled",
+    "authenticated Blob video decodes in Chromium",
+    "refresh restores task and session; no JWT in localStorage",
+    "poll connection error retains evidence; manual retry recovers",
+    "history direct refresh/detail; task polling stops on leaving console",
+    "project truthfully lists cloud gaps; mobile has no page overflow",
+    "FastAPI credential expiry logs out and clears token/media view"
+  ],
+  "pageErrors": [],
+  "task": null,
+  "video": {
+    "width": 640,
+    "height": 480,
+    "duration": 2.8,
+    "source": true
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "result": "passed"
+}

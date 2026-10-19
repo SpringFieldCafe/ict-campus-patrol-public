@@ -1,0 +1,118 @@
+# 一、REVIEW —— actions/starter-workflows/pages/static.yml 适配审查
+
+**结论：结构与既定约束一致，可交付 Codex 应用；以下逐项审查含待核对项。**
+
+与原模板一致（保持项）：
+1. 触发器 `push: branches: [main]` + `workflow_dispatch`，符合“每次 push 自动发布、仅手动重试”的约定。
+2. 权限保持最小：`contents: read`（checkout）、`pages: write`、`id-token: write`（deploy-pages 的 OIDC），与官方 Pages 部署要求一致。
+3. 并发组 `pages`、`cancel-in-progress: false`：串行发布，不取消进行中的生产部署。
+4. 单 `deploy` job + `github-pages` environment + `url` 取自部署步骤输出，结构未改。
+
+适配点（正确项）：
+5. `path: 'docs'` 替换原 `'.'`，匹配 `docs/index.html` 相对路径静态站。
+6. 无任何构建步骤：不需要 Node 编译，与“不运行 Vite 应用或 API”一致。
+7. 4 个 Action 固定到 40 位提交并注明主版本，属供应链加固，优于原 tag 引用。
+8. 文件头保留来源提交、MIT 许可与变更说明，出处可追溯。
+
+待核对/建议（按分工交 Codex）：
+9. 4 个 SHA 与注释 tag 的对应关系**未经我离线核实**，由 Codex 做版本 API 核对；建议在 `docs/HOSTING.md` 记录核对日期与结果。
+10. workflow 须位于公开仓 `.github/workflows/` 下；应用时确认 `group: "pages"` 无转义反斜杠（消息中的 `\"` 应为消息编码，非文件内容）。
+11. 建议确认 Pages 是否对 `docs/` 执行 Jekyll 处理；如需跳过，补一个空的 `docs/.nojekyll`（以浏览器 QA 实际结果为准）。
+12. 首次部署须在仓库 Settings → Pages 将 Source 设为 “GitHub Actions”，`github-pages` 环境随后自动创建。
+
+边界确认：仅公开仓 main 的 push 触发部署，私有仓更新不会自动同步；发布流程无密钥、无华为云资源、无任何 AI 调用。✅
+
+**声明**：本审查为静态审阅，未执行 workflow、未部署站点；部署是否成功以公开仓 Actions 实际运行为准。
+
+---
+
+# 二、MAINTENANCE.md（全文，约 700 字，可原样写入 docs/MAINTENANCE.md）
+
+```markdown
+# 维护说明（公开静态站）
+
+## 部署链路
+公开仓 SpringFieldCafe/ict-campus-patrol-public 使用 GitHub Actions 部署静态站。
+将 Pages 源设置为 GitHub Actions 后，main 分支每次 push 会自动把 docs/ 发布到
+GitHub Pages；workflow_dispatch 仅用于手动重试。部署不需要 Node 编译，不需要
+华为 AK/SK 或模型密钥，也不在发布流程中调用任何 AI。
+
+## 前置设置
+- 仓库 Settings → Pages → Build and deployment → Source 选择 "GitHub Actions"。
+- github-pages 环境由首次部署自动创建，站点 URL 取自部署步骤输出。
+- workflow 文件必须位于 .github/workflows/ 下；改动需提交并推送到公开仓才生效。
+
+## 日常维护
+1. 用普通编辑器修改 docs/（index.html、CSS/JS、images/data 均为相对路径），
+   git add/commit/push 即可发布，无需本地构建。
+2. 更新 docs/data 下 JSON 前，先核对指标数值与历史来源，避免覆盖既有统计口径。
+3. 新增图片前核对许可与隐私；无授权或含真实人员影像的资产不得因自动发布纳入。
+4. 推送后在 Actions 页观察运行结果，以实际部署结果填写证据与文档。
+
+## 修改 workflow 的注意点
+- 本 workflow 改编自 actions/starter-workflows/pages/static.yml（MIT，
+  Copyright 2020 GitHub），来源提交已记录在文件头，许可见
+  docs/upstream/github-pages-starter-LICENSE，部署背景见 docs/HOSTING.md。
+- 4 个 Action 固定到 40 位提交；升级版本时必须重新核对提交与官方 tag 的对应。
+- 上传工件仅为 docs 目录；apps/web 是依赖后端的独立工作台，其 dist 不能作为
+  完整在线应用上传。
+- 权限保持最小（contents read、pages write、id-token write）；并发组串行且
+  不取消进行中的部署，勿随意放宽。
+
+## 回滚与排查
+- 回滚站点：revert 对应提交后 push，自动重新发布；workflow_dispatch 只重跑，
+  不改变已提交内容。
+- 部署失败优先检查：workflow 文件位置、Pages 源设置、docs 内文件体积、
+  Action 提交与 tag 的对应关系；必要时用 workflow_dispatch 手动重跑确认。
+- 仅公开仓 main 的 push 触发部署；私有仓更新不会自动复制或同步到公开仓。
+```
+
+---
+
+# 三、AGENTS.md 追加约定
+
+```markdown
+## GitHub Pages 自动部署与 AI 协作（公开仓）
+
+- 推送即部署：公开仓 main 的 push 由 GitHub Actions 发布 docs/；不在发布
+  流程中调用大模型或其他 AI。
+- 尽量复用他人方案：改编第三方 workflow/模板时保留来源提交、许可与变更
+  说明；Action 固定到经核对的提交。
+- 每轮相关工作实际邀请 CodeArts 参与：由其承担有意义的小范围审查/文档/
+  代码任务；保存请求、回答与脱敏回执，列明人工改动与验证结果；不编造
+  CodeArts 亲自执行。
+- 无福利额度或登录不可用时如实记录并与用户沟通，不切付费模型、不购买
+  服务；零现金预算。
+- 任务为纯机械检查且无可交付内容时，说明原因而非制造贡献记录。
+- 更新 JSON 核对指标与历史来源；新增图片核对许可与隐私；未经授权资产
+  不得因自动发布纳入。
+- 静态站仅含 docs/ 相对路径资源，不运行 Vite 应用或 API；apps/web 的
+  dist 不得当作完整在线应用。
+```
+
+---
+
+# 四、README 追加段落
+
+```markdown
+## 部署
+- 推送 `main` 即自动部署：GitHub Actions 将 `docs/` 发布到 GitHub Pages
+  （仓库 Pages 源设为 Actions）。
+- 手动重试：在 Actions 页面运行 `workflow_dispatch`。
+- 无需 Node 编译，无需任何密钥或云资源。
+
+## 本地预览
+用浏览器直接打开 `docs/index.html`，或以任意静态服务器指向 `docs/`；
+CSS/JS/images/data 均为相对路径，无 API 依赖。`apps/web` 是依赖后端的
+独立工作台，不属于本站部署范围。
+
+## 维护约定
+- 更新 JSON 数据前核对指标与历史来源；新增图片核对许可与隐私；未经
+  授权资产不得发布。
+- workflow 来源与许可见 `docs/HOSTING.md` 与 `docs/upstream/`；维护
+  说明见 `docs/MAINTENANCE.md`。
+```
+
+---
+
+**诚实声明**：本次实际贡献为 workflow 静态审查与维护说明/协作约定主笔；未执行测试、未部署、未创建仓库。模板下载、版本 API 核对、实际文件应用、浏览器 QA、GitHub 创建与部署由 Codex 完成；部署结果以公开仓 Actions 实际运行为准，后续据此填写证据。

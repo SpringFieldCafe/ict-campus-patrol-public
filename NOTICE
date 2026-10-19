@@ -1,0 +1,21 @@
+Campus Patrol public application and evidence subset
+Copyright 2026 Campus Patrol contributors
+
+Original project additions are licensed under Apache License 2.0.
+This notice does not relicense third-party content.
+
+apps/web includes modified V3 Admin Vite, licensed under MIT:
+Copyright (c) 2022-present pany <https://github.com/pany-ang>
+See apps/web/LICENSE and apps/web/UPSTREAM.md.
+
+cloud/backend includes adaptations from full-stack-fastapi-template, MIT:
+Copyright (c) 2019 Sebastián Ramírez
+See cloud/backend/third_party/fastapi-template-LICENSE and cloud/backend/UPSTREAM.md.
+
+Package dependencies are not vendored; their separate licenses apply.
+Robot/navigation implementations, robot model assets and policy weights
+are excluded from this public subset; no redistribution rights are asserted.
+
+.github/workflows/pages.yml adapts GitHub actions/starter-workflows (MIT).
+Copyright (c) 2020 GitHub
+See docs/upstream/github-pages-starter-LICENSE and docs/HOSTING.md.

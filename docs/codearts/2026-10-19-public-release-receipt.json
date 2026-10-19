@@ -1,0 +1,52 @@
+{
+  "status": "response_received",
+  "provider_model": "benefit-model/glm-5.3-flash",
+  "started_utc": "2026-10-19T03:15:04.835363+00:00",
+  "finished_utc": "2026-10-19T03:16:26.166437+00:00",
+  "duration_seconds": 81.33,
+  "returncode": 0,
+  "timed_out": false,
+  "event_counts": {
+    "step_start": 1,
+    "text": 1,
+    "step_finish": 1
+  },
+  "response_characters": 2571,
+  "reported_cost_sum": 0,
+  "reported_tokens": [
+    {
+      "total": 23407,
+      "input": 15970,
+      "output": 1402,
+      "reasoning": 6035,
+      "cache": {
+        "write": 0,
+        "read": 0
+      },
+      "context": {
+        "tools": 0,
+        "mcp": 0,
+        "messages": 7182,
+        "skills": 0,
+        "system_prompts": 16225
+      }
+    }
+  ],
+  "requested_permission": {
+    "*": "deny"
+  },
+  "billing_note": "Benefit provider/header only; event cost is not an account billing receipt",
+  "artifact_sha256": {
+    "request.md": "9f2bec721a772ec8f2b3d7aed7c62823a4f91c28bbec1d0b59c23f9c78bf87ec",
+    "events.jsonl": "589c64f53d110d43e9b8a5e4f3792688d268d0149d5b455d0708cad4d5bef97b",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response.md": "0bbe9d46a6d9ccd4c81ec8040f4572e77ce5fd40663700502e77d0c2b99514be"
+  },
+  "sanitized_attachment_sha256": {
+    "THIRD_PARTY_NOTICES.md": "464b8d0c1eef7e050d81a59ef3448effe6684b8a5de71c41e63d52ff03956a4e",
+    "apps/web/UPSTREAM.md": "1d526d8f7f3bd7b2c0b4b908ffb90b326e739600876bb7718b49a1ae981bef0d",
+    "cloud/backend/UPSTREAM.md": "5912fca73589728d5c0f0e2892b4977ef11caee95e4329a755d2dc55ec887db9",
+    "evaluation/vision/VALIDATION.md": "3a94268345ef5d24b237c67b0696251244a49a89136ee982b3830b27ac4784ab"
+  },
+  "public_receipt_note": "Selected original receipt fields; raw event stream, local runtime identifiers and authentication excluded. Tool calls: 0. Event cost is not an account billing statement."
+}

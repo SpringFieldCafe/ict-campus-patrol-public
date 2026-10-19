@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "validation_date": "2026-10-19",
+  "scope": "public application source subset; not full robot/simulation reproduction",
+  "status": "passed_with_documented_scope_limits",
+  "environment": {
+    "python": "3.14.8",
+    "node": "24.22.0",
+    "pnpm": "10.34.0",
+    "dependencies": "Reused existing isolated backend environment and frontend node_modules through ignored local symlinks. No dependency install or upgrade; not a clean-machine installation."
+  },
+  "checks": [
+    {
+      "id": "backend-tests",
+      "command": "bash cloud/backend/test.sh -q",
+      "passed": 74,
+      "failed": 0,
+      "exit_code": 0,
+      "warnings": [
+        "Starlette TestClient httpx deprecation; no dependency change."
+      ],
+      "fixture_scope": "Synthetic subprocesses, images, credentials and a temporary robot-output configuration adapter; no unpublished robot CLI needed."
+    },
+    {
+      "id": "frontend-tests",
+      "directory": "apps/web",
+      "command": "pnpm test:run",
+      "files_passed": 4,
+      "passed": 22,
+      "failed": 0,
+      "exit_code": 0
+    },
+    {
+      "id": "frontend-build",
+      "directory": "apps/web",
+      "command": "pnpm build",
+      "typescript_check": true,
+      "production_build": true,
+      "exit_code": 0,
+      "warnings": [
+        "Two upstream @vueuse/core PURE annotations ignored by Rollup."
+      ]
+    },
+    {
+      "id": "codearts-helper-offline-tests",
+      "command": "env -u PYTHONPATH -u PYTHONHOME cloud/backend/.venv/bin/python -m pytest tools/tests/test_codearts_free.py -q",
+      "passed": 5,
+      "failed": 0,
+      "exit_code": 0,
+      "real_codearts_requests": 0
+    },
+    {
+      "id": "vision-empty-manifest-check",
+      "command": "bash cloud/backend/vision-eval.sh check",
+      "status": "WAITING_FOR_IMAGES",
+      "total": 3,
+      "ready": 0,
+      "pending": 3,
+      "model_effect_evaluated": false,
+      "exit_code": 0
+    },
+    {
+      "id": "vision-empty-mock-report",
+      "command": "bash cloud/backend/vision-eval.sh run --mock",
+      "status": "WAITING_FOR_IMAGES",
+      "total": 3,
+      "ready": 0,
+      "pending": 3,
+      "responded": 0,
+      "real_model_attempts": 0,
+      "mock_attempts": 0,
+      "human_pass_rate_on_reviewed": null,
+      "model_effect_evaluated": false,
+      "exit_code": 0
+    },
+    {
+      "id": "application-smoke",
+      "method": "FastAPI TestClient against public source, generated temporary credentials, CAMPUS_ENV_FILE=/dev/null and a private temporary data directory",
+      "result": {
+        "status": "passed",
+        "health": "ok",
+        "unauthenticated_capabilities_status": 401,
+        "login_status": 200,
+        "simulation_routes": 2,
+        "example_points": 1,
+        "simulation_configured": false,
+        "motion_enabled": false,
+        "huawei_configured": false,
+        "simulation_rejection": {
+          "status": 503,
+          "code": "SIMULATION_NOT_CONFIGURED"
+        },
+        "motion_rejection": {
+          "status": 409,
+          "code": "MOTION_DISABLED"
+        },
+        "tasks_created": 0,
+        "built_frontend_status": 200,
+        "spa_refresh_status": 200,
+        "private_file_status": 404,
+        "network_model_requests": 0,
+        "robot_commands": 0
+      }
+    }
+  ],
+  "initial_failure_and_fix": {
+    "backend_initial_result": {
+      "passed": 65,
+      "failed": 9
+    },
+    "cause": "Photo/analysis fixtures previously imported an optional robot CLI that is excluded from the public subset.",
+    "fix": "Test fixture now reads its synthetic temporary JSON configuration directly through an explicit monkeypatched adapter. Production application logic and robot execution are unchanged.",
+    "file": "cloud/backend/tests/conftest.py"
+  },
+  "not_validated_or_not_included": [
+    "Fresh dependency download/install on a new machine",
+    "Real MuJoCo or robot execution from the public subset",
+    "Robot/simulation source and model redistribution authorization",
+    "Real Huawei vision calls or visual accuracy",
+    "Huawei cloud deployment or cloud Skills resource creation",
+    "GitHub Pages publication (validated separately)"
+  ],
+  "safety_counts": {
+    "real_robot_commands": 0,
+    "real_vision_model_requests": 0,
+    "new_cloud_resources": 0
+  },
+  "source_sha256": {
+    "cloud/backend/tests/conftest.py": "fe112dff4230a06343063539e8264728bbb1af7c7a4186f5d47c17ed64003047",
+    "cloud/backend/app/services/runtime.py": "19ebd477f2a29864c90986a934f09b2d3a37706759ca9490423b3757d6245d67",
+    "cloud/backend/app/core/config.py": "9134bd4904ba7f821cdae1e22a9584cdd49247a2372a32881c567e59c5a71071",
+    "cloud/backend/uv.lock": "6eae16e5735eb7b00de469d454a404e866200b7ff1d8353f8c6173aef1166b2e",
+    "apps/web/package.json": "ea02acf3e73c38e934019bf31e1fe4893be6beb7ddebfdc8cc43e96df39adf8b",
+    "apps/web/pnpm-lock.yaml": "11144258a9a0e4a135d2f8c94b61c168b403a358abb450a909e6a3963a06e673",
+    "evaluation/vision/manifest.example.json": "4b375eee4ecdfed6960886afed111fe2292d80eb009ecf9ae37a3f813730465b",
+    "edge/go2/simulation/routes.json": "35d72f73e18e7331169cd32b13b10738569bb8342f3fb91577e5a6e2497806ae",
+    "edge/go2/runtime/observation-points.example.json": "d8d60dbb3c3110d70672c92988e9a621e7302bd88dd67748675d8994c2af644d"
+  }
+}

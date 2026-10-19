@@ -1,0 +1,105 @@
+{
+  "origin": "http://127.0.0.1:8010",
+  "checks": [
+    "unauthenticated redirect and failed login",
+    "real OAuth login; actual capabilities; motion disabled",
+    "browser submitted real MuJoCo task; reached goal; no simulated photo/answer",
+    "authenticated Blob video decodes in Chromium",
+    "refresh restores task and session; no JWT in localStorage",
+    "poll connection error retains evidence; manual retry recovers",
+    "history direct refresh/detail; task polling stops on leaving console",
+    "project truthfully lists cloud gaps; mobile has no page overflow",
+    "FastAPI credential expiry logs out and clears token/media view"
+  ],
+  "pageErrors": [],
+  "task": {
+    "task_id": "task-46b739cfc82a4d9c9cd1148010d4ef3b",
+    "point_id": "checkpoints-simple",
+    "mode": "simulation",
+    "state": "SUCCEEDED",
+    "video_available": true,
+    "analysis_state": "NO_CAMERA_PHOTO",
+    "simulation_summary": {
+      "checkpoint_events": [
+        {
+          "distance": 0.39794978499412537,
+          "index": 0,
+          "position_xy": [
+            0.7556412220001221,
+            -0.31409046053886414
+          ],
+          "step": 940
+        },
+        {
+          "distance": 0.3999916613101959,
+          "index": 1,
+          "position_xy": [
+            1.9071968793869019,
+            -0.13907700777053833
+          ],
+          "step": 2360
+        },
+        {
+          "distance": 0.3950052261352539,
+          "index": 2,
+          "position_xy": [
+            2.605193853378296,
+            -0.01253900770097971
+          ],
+          "step": 3150
+        }
+      ],
+      "collision": false,
+      "current_waypoint_index": 2,
+      "elapsed_s": 17.86166622199994,
+      "fallen": false,
+      "goal_reached": true,
+      "max_pitch": 0.05879414182512952,
+      "max_roll": 0.07892102335121254,
+      "min_obstacle_distance": 0.800000011920929,
+      "mode": "simulation",
+      "path_length": 2.8670268058776855,
+      "reached_indices": [
+        0,
+        1,
+        2
+      ],
+      "scene": "flat_obstacle",
+      "seed": 0,
+      "simulated_seconds": 6.301999999999528,
+      "steps": 3151,
+      "steps_requested": 30000,
+      "stop_on_goal": true,
+      "waypoints": [
+        {
+          "radius": 0.4,
+          "x": 1,
+          "y": 0
+        },
+        {
+          "radius": 0.4,
+          "x": 2,
+          "y": 0.25
+        },
+        {
+          "radius": 0.4,
+          "x": 3,
+          "y": 0
+        }
+      ],
+      "waypoints_reached": 3,
+      "waypoints_total": 3
+    }
+  },
+  "video": {
+    "width": 640,
+    "height": 480,
+    "duration": 6.32,
+    "source": true
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "result": "passed"
+}

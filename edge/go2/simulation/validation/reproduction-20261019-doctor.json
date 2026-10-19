@@ -1,0 +1,8 @@
+{
+  "python": "3.10.12",
+  "ffmpeg": true,
+  "numpy": "1.24.4",
+  "torch": "2.0.1+cpu",
+  "mujoco": "3.2.3",
+  "models_verified": true
+}

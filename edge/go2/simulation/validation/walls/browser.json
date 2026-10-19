@@ -1,0 +1,118 @@
+{
+  "origin": "http://127.0.0.1:59007",
+  "checks": [
+    "unauthenticated redirect and failed login",
+    "real OAuth login; actual capabilities; motion disabled",
+    "browser submitted real MuJoCo task; reached goal; no simulated photo/answer",
+    "authenticated Blob video decodes in Chromium",
+    "refresh restores task and session; no JWT in localStorage",
+    "poll connection error retains evidence; manual retry recovers",
+    "history direct refresh/detail; task polling stops on leaving console",
+    "project truthfully lists cloud gaps; mobile has no page overflow",
+    "FastAPI credential expiry logs out and clears token/media view"
+  ],
+  "pageErrors": [],
+  "task": {
+    "task_id": "task-5e186cc371ad4f9db460ba784a8ada06",
+    "point_id": "checkpoints-walls",
+    "mode": "simulation",
+    "state": "SUCCEEDED",
+    "video_available": true,
+    "analysis_state": "NO_CAMERA_PHOTO",
+    "simulation_summary": {
+      "checkpoint_events": [
+        {
+          "distance": 0.3994240462779999,
+          "index": 0,
+          "position_xy": [
+            2.6338372230529785,
+            -0.2978202700614929
+          ],
+          "step": 3150
+        },
+        {
+          "distance": 0.3978801965713501,
+          "index": 1,
+          "position_xy": [
+            5.3040056228637695,
+            -0.34625834226608276
+          ],
+          "step": 6210
+        },
+        {
+          "distance": 0.39771768450737,
+          "index": 2,
+          "position_xy": [
+            8.128582000732422,
+            -0.39668935537338257
+          ],
+          "step": 9680
+        }
+      ],
+      "collision": false,
+      "collision_sample_seconds": 0.002,
+      "control": {
+        "command_filter_alpha": 0.5,
+        "speed_scale": 1,
+        "turn_lateral_limit": 0.18,
+        "velocity_frame": "body"
+      },
+      "current_waypoint_index": 2,
+      "elapsed_s": 68.73313321400019,
+      "fallen": false,
+      "goal_reached": true,
+      "initial_pose": {
+        "x": 0,
+        "y": 0,
+        "yaw": 0
+      },
+      "max_pitch": 0.09841640878531241,
+      "max_roll": 0.07111124207377496,
+      "min_obstacle_distance": 0.30000001192092896,
+      "mode": "simulation",
+      "path_length": 9.581838607788086,
+      "reached_indices": [
+        0,
+        1,
+        2
+      ],
+      "scene": "staggered_walls",
+      "seed": 0,
+      "simulated_seconds": 19.362000000000148,
+      "steps": 9681,
+      "steps_requested": 30000,
+      "stop_on_goal": true,
+      "termination_reason": "SUCCEEDED",
+      "waypoints": [
+        {
+          "radius": 0.4,
+          "x": 2.9,
+          "y": 0
+        },
+        {
+          "radius": 0.4,
+          "x": 5.5,
+          "y": 0
+        },
+        {
+          "radius": 0.4,
+          "x": 8.1,
+          "y": 0
+        }
+      ],
+      "waypoints_reached": 3,
+      "waypoints_total": 3
+    }
+  },
+  "video": {
+    "width": 640,
+    "height": 480,
+    "duration": 19.38,
+    "source": true
+  },
+  "mobile": {
+    "width": 390,
+    "scroll": 390
+  },
+  "result": "passed"
+}

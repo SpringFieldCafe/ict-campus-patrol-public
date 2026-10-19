@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "dataset_id": "campus-observation-v1",
+  "cases": [
+    {
+      "id": "objects-position",
+      "status": "pending",
+      "capture_notes": "后续拍摄有少量箱子等物品的现场；根据实际照片填写可见物体和大致位置。",
+      "image": null,
+      "image_sha256": null,
+      "source": {"description": "", "usage_permission": ""},
+      "question": "图中有哪些明显物品？它们大致位于画面的什么位置？只描述图片可见内容。",
+      "reference_facts": [],
+      "unanswerable_points": []
+    },
+    {
+      "id": "visible-passage",
+      "status": "pending",
+      "capture_notes": "后续拍摄通道场景，包含有物品占用和无明显占用的情况；每张照片单独建条目。",
+      "image": null,
+      "image_sha256": null,
+      "source": {"description": "", "usage_permission": ""},
+      "question": "图片可见的通道内是否有物品占用？如有，请描述物品及大致位置。无法从图片确定的情况请说明。",
+      "reference_facts": [],
+      "unanswerable_points": []
+    },
+    {
+      "id": "limited-view",
+      "status": "pending",
+      "capture_notes": "后续补充遮挡、光线不足或视野有限的真实照片；按实际画面记录哪些问题无法判断。",
+      "image": null,
+      "image_sha256": null,
+      "source": {"description": "", "usage_permission": ""},
+      "question": "这张照片能够确认哪些现场情况？有哪些情况因遮挡、清晰度或视野限制无法判断？",
+      "reference_facts": [],
+      "unanswerable_points": []
+    }
+  ]
+}

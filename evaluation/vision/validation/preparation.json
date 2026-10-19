@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "branch": "feat/vision-evaluation-preparation-20261017",
+  "scope": "Offline preparation only; no scene photos, hardware, model calls or cloud deployment.",
+  "commands": [
+    {
+      "command": "bash cloud/backend/vision-eval.sh check",
+      "exit_code": 0,
+      "output": {
+        "status": "WAITING_FOR_IMAGES",
+        "dataset_id": "campus-observation-v1",
+        "total": 3,
+        "ready": 0,
+        "pending": 3,
+        "model_effect_evaluated": false
+      }
+    },
+    {
+      "command": "bash cloud/backend/vision-eval.sh run --mock --output-dir .local/vision-eval/preparation-20261017",
+      "exit_code": 0,
+      "output": {
+        "directory": ".local/vision-eval/preparation-20261017",
+        "status": "WAITING_FOR_IMAGES",
+        "mode": "mock",
+        "total": 3,
+        "pending": 3,
+        "responded": 0,
+        "failed": 0,
+        "real_model_attempts": 0,
+        "mock_attempts": 0,
+        "human_reviewed": 0,
+        "human_passed": 0,
+        "unreviewed_responses": 0,
+        "human_pass_rate_on_reviewed": null,
+        "model_effect_evaluated": false
+      }
+    },
+    {
+      "command": "bash cloud/backend/vision-eval.sh report .local/vision-eval/preparation-20261017",
+      "exit_code": 0,
+      "output": {
+        "directory": ".local/vision-eval/preparation-20261017",
+        "status": "WAITING_FOR_IMAGES",
+        "mode": "mock",
+        "total": 3,
+        "pending": 3,
+        "responded": 0,
+        "failed": 0,
+        "real_model_attempts": 0,
+        "mock_attempts": 0,
+        "human_reviewed": 0,
+        "human_passed": 0,
+        "unreviewed_responses": 0,
+        "human_pass_rate_on_reviewed": null,
+        "model_effect_evaluated": false
+      }
+    }
+  ],
+  "tests": {
+    "full_backend": {
+      "command": "bash cloud/backend/test.sh -q",
+      "passed": 74
+    },
+    "focused": {
+      "command": "bash cloud/backend/test.sh -q tests/test_vision_eval.py",
+      "passed": 12
+    },
+    "note": "All HTTP image responses in tests use MockTransport; small generated PNGs are test fixtures, not evaluation samples."
+  }
+}

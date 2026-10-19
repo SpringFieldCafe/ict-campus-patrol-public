@@ -1,0 +1,46 @@
+{
+  "status": "response_received",
+  "provider_model": "benefit-model/glm-5.3-flash",
+  "started_utc": "2026-10-19T03:24:27.515966+00:00",
+  "finished_utc": "2026-10-19T03:25:52.256358+00:00",
+  "duration_seconds": 84.74,
+  "returncode": 0,
+  "timed_out": false,
+  "event_counts": {
+    "step_start": 1,
+    "text": 1,
+    "step_finish": 1
+  },
+  "response_characters": 3622,
+  "reported_cost_sum": 0,
+  "reported_tokens": [
+    {
+      "total": 19534,
+      "input": 11336,
+      "output": 1726,
+      "reasoning": 6472,
+      "cache": {
+        "write": 0,
+        "read": 0
+      },
+      "context": {
+        "tools": 0,
+        "mcp": 0,
+        "messages": 3382,
+        "skills": 0,
+        "system_prompts": 16152
+      }
+    }
+  ],
+  "requested_permission": {
+    "*": "deny"
+  },
+  "billing_note": "Benefit provider/header only; event cost is not an account billing receipt",
+  "artifact_sha256": {
+    "request.md": "55cd04d733864829553436cc7d64fd163a3ceceb642aa5cdfb55989c7d7d507d",
+    "events.jsonl": "40cc271634a08e57053a7752879c974cb8ab78d50aa2ae9c3d80200103085ded",
+    "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "response.md": "eef2092d7beaba3e5d8d3471b1e367ccae9c41fd10b9ea4de63890e21b4b5666"
+  },
+  "public_receipt_note": "Selected original receipt fields. Raw runtime identifiers/events and authentication excluded. No tool calls. Artifact hash names refer to original request.md/response.md; public copies retain original bytes."
+}

@@ -1,0 +1,757 @@
+{
+  "kind": "DEVELOPMENT_TRIALS_ONLY",
+  "trials": [
+    {
+      "id": "walls-before-frame-fix",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3975432515144348,
+            "index": 0,
+            "position_xy": [
+              2.3088254928588867,
+              -0.07087384164333344
+            ],
+            "step": 2920
+          }
+        ],
+        "collision": true,
+        "current_waypoint_index": 1,
+        "elapsed_s": 10.100961336000182,
+        "fallen": false,
+        "goal_reached": false,
+        "max_pitch": 0.128758701482128,
+        "max_roll": 0.12681178333704698,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 4.246818542480469,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 8.341999999999455,
+        "steps": 4171,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-before-frame-fix",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-after-frame-fix",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3982506990432739,
+            "index": 0,
+            "position_xy": [
+              2.374209403991699,
+              -0.22905035316944122
+            ],
+            "step": 3370
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 11.319384418000482,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.12358563887787292,
+        "max_roll": 0.11170689592543258,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 4.395267963409424,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 9.489999999999839,
+        "steps": 4745,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-after-frame-fix",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-speed065",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.395906537771225,
+            "index": 0,
+            "position_xy": [
+              2.3417515754699707,
+              0.16852299869060516
+            ],
+            "step": 4310
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 0.65,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 16.09356966299947,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.04822161834005709,
+        "max_roll": 0.06284841735302553,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 4.10423469543457,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 12.506000000000846,
+        "steps": 6253,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-speed065",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-speed080",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.399245023727417,
+            "index": 0,
+            "position_xy": [
+              2.305410385131836,
+              -0.06079137697815895
+            ],
+            "step": 3590
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 0.8,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 14.0060144400004,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.10737128201434595,
+        "max_roll": 0.05653227726625999,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 4.300937652587891,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 10.54400000000019,
+        "steps": 5272,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-speed080",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-lateral040",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39848223328590393,
+            "index": 0,
+            "position_xy": [
+              2.351456642150879,
+              -0.19314654171466827
+            ],
+            "step": 3560
+          },
+          {
+            "distance": 0.38832202553749084,
+            "index": 1,
+            "position_xy": [
+              4.907021999359131,
+              -0.32853585481643677
+            ],
+            "step": 6950
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.4,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 30.827846928000326,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.12358563887787292,
+        "max_roll": 0.08275276580895136,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 11.28833293914795,
+        "reached_indices": [
+          0,
+          1
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 23.92399999999762,
+        "steps": 11962,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 2,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-lateral040",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-lateral060",
+      "layout": "v1",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39752185344696045,
+            "index": 0,
+            "position_xy": [
+              2.3305280208587646,
+              -0.1466766595840454
+            ],
+            "step": 3970
+          },
+          {
+            "distance": 0.39961472153663635,
+            "index": 1,
+            "position_xy": [
+              5.086034297943115,
+              -0.103292316198349
+            ],
+            "step": 8750
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.6,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 36.608726907000346,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.12358563887787292,
+        "max_roll": 0.09801981790788972,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 10.966633796691895,
+        "reached_indices": [
+          0,
+          1
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 29.99999999999425,
+        "steps": 15000,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "STEP_LIMIT",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 4.7,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 6.7,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 2,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-lateral060",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-v2-lateral040",
+      "layout": "v2",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3963352143764496,
+            "index": 0,
+            "position_xy": [
+              2.6361007690429688,
+              -0.29570043087005615
+            ],
+            "step": 3240
+          },
+          {
+            "distance": 0.39735764265060425,
+            "index": 1,
+            "position_xy": [
+              5.311710834503174,
+              -0.34991469979286194
+            ],
+            "step": 6120
+          },
+          {
+            "distance": 0.3958798348903656,
+            "index": 2,
+            "position_xy": [
+              8.40975570678711,
+              -0.2465207427740097
+            ],
+            "step": 10290
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.4,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 27.3072126269999,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.10012567200207852,
+        "max_roll": 0.0648322825243321,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 10.860015869140625,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 20.58199999999947,
+        "steps": 10291,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-v2-lateral040",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-v2-lateral060",
+      "layout": "v2",
+      "summary": {
+        "checkpoint_events": [],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.6,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 0,
+        "elapsed_s": 6.788109985000119,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.08617841948329256,
+        "max_roll": 0.050000250847976144,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 2.488269567489624,
+        "reached_indices": [],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 4.9439999999996775,
+        "steps": 2472,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 0,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-v2-lateral060",
+      "note": "开发试跑，未计入正式30次统计"
+    },
+    {
+      "id": "walls-v2-lateral018",
+      "layout": "v2",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3994240462779999,
+            "index": 0,
+            "position_xy": [
+              2.6338372230529785,
+              -0.2978202700614929
+            ],
+            "step": 3150
+          },
+          {
+            "distance": 0.3978801965713501,
+            "index": 1,
+            "position_xy": [
+              5.3040056228637695,
+              -0.34625834226608276
+            ],
+            "step": 6210
+          },
+          {
+            "distance": 0.39771768450737,
+            "index": 2,
+            "position_xy": [
+              8.128582000732422,
+              -0.39668935537338257
+            ],
+            "step": 9680
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 30.97508532900065,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0,
+          "y": 0.0,
+          "yaw": 0.0
+        },
+        "max_pitch": 0.09841640878531241,
+        "max_roll": 0.07111124207377496,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.581838607788086,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 19.362000000000148,
+        "steps": 9681,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3,
+        "model_sha256": {
+          "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+          "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+        },
+        "runtime_versions": {
+          "numpy": "1.24.4",
+          "torch": "2.0.1+cpu",
+          "mujoco": "3.2.3",
+          "python": "3.10.12"
+        }
+      },
+      "raw_artifacts": ".local/simulation/walls-v2-lateral018",
+      "note": "开发试跑，未计入正式30次统计"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "source": "edge/go2/simulation/validation/walls/final.json",
+  "date": "2026-10-17",
+  "mode": "historical_simulation",
+  "by_scene": {
+    "flat_obstacle": {
+      "safety_unknown_trials": 0,
+      "trials": 15,
+      "states": {
+        "SUCCEEDED": 15,
+        "COLLISION": 0,
+        "FALLEN": 0,
+        "STEP_LIMIT": 0,
+        "WALL_TIMEOUT": 0,
+        "ERROR": 0,
+        "CANCELLED": 0
+      },
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "fall_rate": 0.0,
+      "successful_simulated_seconds_mean": 6.217999999999537,
+      "successful_runner_wall_seconds_mean": 8.67284549073332
+    },
+    "staggered_walls": {
+      "safety_unknown_trials": 0,
+      "trials": 15,
+      "states": {
+        "SUCCEEDED": 12,
+        "COLLISION": 3,
+        "FALLEN": 0,
+        "STEP_LIMIT": 0,
+        "WALL_TIMEOUT": 0,
+        "ERROR": 0,
+        "CANCELLED": 0
+      },
+      "success_rate": 0.8,
+      "collision_rate": 0.2,
+      "fall_rate": 0.0,
+      "successful_simulated_seconds_mean": 19.030333333333665,
+      "successful_runner_wall_seconds_mean": 25.98318688591659
+    }
+  },
+  "cases": [
+    {
+      "id": "checkpoints-simple-center-s00",
+      "scene": "flat_obstacle",
+      "variant": "center",
+      "seed": 0,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.121999999999548
+    },
+    {
+      "id": "checkpoints-simple-center-s01",
+      "scene": "flat_obstacle",
+      "variant": "center",
+      "seed": 1,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.701999999999484
+    },
+    {
+      "id": "checkpoints-simple-center-s02",
+      "scene": "flat_obstacle",
+      "variant": "center",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.081999999999552
+    },
+    {
+      "id": "checkpoints-simple-center-s03",
+      "scene": "flat_obstacle",
+      "variant": "center",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.001999999999561
+    },
+    {
+      "id": "checkpoints-simple-center-s04",
+      "scene": "flat_obstacle",
+      "variant": "center",
+      "seed": 4,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.301999999999528
+    },
+    {
+      "id": "checkpoints-simple-left-s00",
+      "scene": "flat_obstacle",
+      "variant": "left",
+      "seed": 0,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.28199999999953
+    },
+    {
+      "id": "checkpoints-simple-left-s01",
+      "scene": "flat_obstacle",
+      "variant": "left",
+      "seed": 1,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.081999999999552
+    },
+    {
+      "id": "checkpoints-simple-left-s02",
+      "scene": "flat_obstacle",
+      "variant": "left",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.361999999999521
+    },
+    {
+      "id": "checkpoints-simple-left-s03",
+      "scene": "flat_obstacle",
+      "variant": "left",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 7.2419999999994245
+    },
+    {
+      "id": "checkpoints-simple-left-s04",
+      "scene": "flat_obstacle",
+      "variant": "left",
+      "seed": 4,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.5419999999995015
+    },
+    {
+      "id": "checkpoints-simple-right-s00",
+      "scene": "flat_obstacle",
+      "variant": "right",
+      "seed": 0,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 5.601999999999605
+    },
+    {
+      "id": "checkpoints-simple-right-s01",
+      "scene": "flat_obstacle",
+      "variant": "right",
+      "seed": 1,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.341999999999524
+    },
+    {
+      "id": "checkpoints-simple-right-s02",
+      "scene": "flat_obstacle",
+      "variant": "right",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 5.581999999999607
+    },
+    {
+      "id": "checkpoints-simple-right-s03",
+      "scene": "flat_obstacle",
+      "variant": "right",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 6.241999999999535
+    },
+    {
+      "id": "checkpoints-simple-right-s04",
+      "scene": "flat_obstacle",
+      "variant": "right",
+      "seed": 4,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 5.781999999999585
+    },
+    {
+      "id": "checkpoints-walls-center-s00",
+      "scene": "staggered_walls",
+      "variant": "center",
+      "seed": 0,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 19.362000000000148
+    },
+    {
+      "id": "checkpoints-walls-center-s01",
+      "scene": "staggered_walls",
+      "variant": "center",
+      "seed": 1,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 19.801999999999904
+    },
+    {
+      "id": "checkpoints-walls-center-s02",
+      "scene": "staggered_walls",
+      "variant": "center",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 19.062000000000314
+    },
+    {
+      "id": "checkpoints-walls-center-s03",
+      "scene": "staggered_walls",
+      "variant": "center",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 19.362000000000148
+    },
+    {
+      "id": "checkpoints-walls-center-s04",
+      "scene": "staggered_walls",
+      "variant": "center",
+      "seed": 4,
+      "state": "COLLISION",
+      "reached": 1,
+      "simulated_seconds": 10.400000000000142
+    },
+    {
+      "id": "checkpoints-walls-left-s00",
+      "scene": "staggered_walls",
+      "variant": "left",
+      "seed": 0,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 17.44200000000121
+    },
+    {
+      "id": "checkpoints-walls-left-s01",
+      "scene": "staggered_walls",
+      "variant": "left",
+      "seed": 1,
+      "state": "COLLISION",
+      "reached": 1,
+      "simulated_seconds": 10.36400000000013
+    },
+    {
+      "id": "checkpoints-walls-left-s02",
+      "scene": "staggered_walls",
+      "variant": "left",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 17.542000000001156
+    },
+    {
+      "id": "checkpoints-walls-left-s03",
+      "scene": "staggered_walls",
+      "variant": "left",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 17.762000000001034
+    },
+    {
+      "id": "checkpoints-walls-left-s04",
+      "scene": "staggered_walls",
+      "variant": "left",
+      "seed": 4,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 17.622000000001112
+    },
+    {
+      "id": "checkpoints-walls-right-s00",
+      "scene": "staggered_walls",
+      "variant": "right",
+      "seed": 0,
+      "state": "COLLISION",
+      "reached": 2,
+      "simulated_seconds": 15.976000000002005
+    },
+    {
+      "id": "checkpoints-walls-right-s01",
+      "scene": "staggered_walls",
+      "variant": "right",
+      "seed": 1,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 18.76200000000048
+    },
+    {
+      "id": "checkpoints-walls-right-s02",
+      "scene": "staggered_walls",
+      "variant": "right",
+      "seed": 2,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 19.402000000000125
+    },
+    {
+      "id": "checkpoints-walls-right-s03",
+      "scene": "staggered_walls",
+      "variant": "right",
+      "seed": 3,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 21.121999999999172
+    },
+    {
+      "id": "checkpoints-walls-right-s04",
+      "scene": "staggered_walls",
+      "variant": "right",
+      "seed": 4,
+      "state": "SUCCEEDED",
+      "reached": 3,
+      "simulated_seconds": 21.121999999999172
+    }
+  ]
+}

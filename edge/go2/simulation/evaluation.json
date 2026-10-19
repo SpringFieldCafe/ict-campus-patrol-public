@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "route_ids": ["checkpoints-simple", "checkpoints-walls"],
+  "variants": [
+    {"id": "center", "y_offset": 0.0},
+    {"id": "left", "y_offset": 0.12},
+    {"id": "right", "y_offset": -0.12}
+  ],
+  "seeds": [0, 1, 2, 3, 4],
+  "spawn_jitter": {"x": 0.08, "y": 0.08, "yaw": 0.08726646259971647},
+  "steps": 15000,
+  "wall_timeout_seconds": 120,
+  "control": {"speed_scale": 1.0, "command_filter_alpha": 0.5, "turn_lateral_limit": 0.18}
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-19",
+  "target": "http://127.0.0.1:8768/",
+  "method": "Chromium real browser; static site only",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": 200,
+      "title": "Campus Patrol · 现场观察，有据可循",
+      "overflow": false,
+      "images": [
+        {
+          "src": "assets/mark.svg",
+          "loaded": true
+        },
+        {
+          "src": "images/2026-10-16-history.png",
+          "loaded": true
+        },
+        {
+          "src": "images/2026-10-17-wall-evaluation.png",
+          "loaded": true
+        },
+        {
+          "src": "assets/mark.svg",
+          "loaded": true
+        }
+      ],
+      "wall_cases": 15,
+      "wall_collisions": 3,
+      "flat_success_rate": 100,
+      "failed_case_retained": true,
+      "script_errors": 0,
+      "failed_requests": 0,
+      "external_resource_requests": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "status": 200,
+      "title": "Campus Patrol · 现场观察，有据可循",
+      "overflow": false,
+      "images": [
+        {
+          "src": "assets/mark.svg",
+          "loaded": true
+        },
+        {
+          "src": "images/2026-10-16-history.png",
+          "loaded": true
+        },
+        {
+          "src": "images/2026-10-17-wall-evaluation.png",
+          "loaded": true
+        },
+        {
+          "src": "assets/mark.svg",
+          "loaded": true
+        }
+      ],
+      "wall_cases": 15,
+      "wall_collisions": 3,
+      "flat_success_rate": 100,
+      "failed_case_retained": true,
+      "script_errors": 0,
+      "failed_requests": 0,
+      "external_resource_requests": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-16",
+  "checkout_source": "git checkout-index --all; source and static assets staged on the new branch",
+  "old_archive_present": false,
+  "old_classification_links_present": false,
+  "extra_inputs": [
+    "two explicitly imported local policy files, SHA256 verified"
+  ],
+  "interpreter": "fresh isolated Python 3.10.12 environment, system-site-packages disabled",
+  "result": "passed",
+  "summary": "checkpoints-clean-checkout.json"
+}

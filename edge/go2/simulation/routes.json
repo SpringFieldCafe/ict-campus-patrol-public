@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "routes": [
+    {
+      "id": "checkpoints-simple",
+      "description": "简单平地：依次到达 CP1、CP2、CP3，两侧放置两个箱体",
+      "scene": "flat_obstacle",
+      "waypoints": [
+        {"x": 1.0, "y": 0.0, "radius": 0.4},
+        {"x": 2.0, "y": 0.25, "radius": 0.4},
+        {"x": 3.0, "y": 0.0, "radius": 0.4}
+      ]
+    },
+    {
+      "id": "checkpoints-walls",
+      "description": "开阔平地：三面错位短墙，墙位于各段目标直线上，自主绕墙后依次到达 CP1、CP2、CP3",
+      "scene": "staggered_walls",
+      "control": {"turn_lateral_limit": 0.18},
+      "waypoints": [
+        {"x": 2.9, "y": 0.0, "radius": 0.4},
+        {"x": 5.5, "y": 0.0, "radius": 0.4},
+        {"x": 8.1, "y": 0.0, "radius": 0.4}
+      ]
+    }
+  ]
+}

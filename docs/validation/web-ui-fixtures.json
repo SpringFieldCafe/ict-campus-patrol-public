@@ -1,0 +1,52 @@
+{
+  "kind": "UI_ROUTE_FIXTURES_ONLY",
+  "disclaimer": "浏览器接口替身验证；不属于实机、真实相机或华为云模型验证。未读取真实凭据，所有API请求均被拦截。",
+  "origin": "http://127.0.0.1:5173",
+  "checks": [
+    {
+      "name": "motion photo decode and photo-question API success",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "answer task_id mismatch is hidden",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "answer photo SHA256 mismatch is hidden",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "HTML answer remains literal text without HTML or script execution",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "cancel request waits for executor confirmation before showing cancelled",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "unknown submission blocks retries until refresh and task reconciliation",
+      "result": "passed",
+      "fixtureOnly": true
+    },
+    {
+      "name": "GET polling backs off after failures and manual recovery is immediate",
+      "result": "passed",
+      "fixtureOnly": true
+    }
+  ],
+  "pageErrors": [],
+  "unexpectedApiCalls": [],
+  "forbiddenExternalRequests": [],
+  "pollBackoffTimingsMs": {
+    "firstRetry": 2022,
+    "secondRetry": 4021,
+    "manualRecovery": 79,
+    "afterRecovery": 1046
+  },
+  "result": "passed"
+}

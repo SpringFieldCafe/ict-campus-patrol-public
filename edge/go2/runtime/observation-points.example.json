@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "reference": "initial_pose",
+  "points": [
+    {
+      "id": "demo-a",
+      "description": "人工示例：从固定起点和起始朝向出发，前方 1 米；尚未实机校准",
+      "goal_forward": 1.0,
+      "goal_left": 0.0
+    }
+  ]
+}

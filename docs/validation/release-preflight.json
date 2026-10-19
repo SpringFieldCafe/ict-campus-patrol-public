@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-19",
+  "scope": "tracked and non-ignored release candidates; not ignored runtime data",
+  "files_checked_excluding_this_report": 301,
+  "bytes": 3169586,
+  "findings": [],
+  "codearts_original_request_response_hashes": "all four matched",
+  "excluded_local_dependency_symlinks": true,
+  "format_notes": [
+    "apps/web/tsconfig.json uses JSONC; actual TypeScript build passed",
+    "Original CodeArts request bytes retain trailing blank lines for receipt hash verification"
+  ],
+  "secret_check_limit": "pattern-based review plus manual whitelist/media audit; not an exhaustive security assessment"
+}

@@ -1,0 +1,5004 @@
+{
+  "schema_version": 1,
+  "kind": "MUJOCO_SIMULATION_ONLY",
+  "manifest": {
+    "created_at_utc": "2026-10-17T12:07:47.605836+00:00",
+    "config": {
+      "schema_version": 1,
+      "route_ids": [
+        "checkpoints-simple",
+        "checkpoints-walls"
+      ],
+      "variants": [
+        {
+          "id": "center",
+          "y_offset": 0.0
+        },
+        {
+          "id": "left",
+          "y_offset": 0.12
+        },
+        {
+          "id": "right",
+          "y_offset": -0.12
+        }
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "spawn_jitter": {
+        "x": 0.08,
+        "y": 0.08,
+        "yaw": 0.08726646259971647
+      },
+      "steps": 15000,
+      "wall_timeout_seconds": 120,
+      "control": {
+        "speed_scale": 1.0,
+        "command_filter_alpha": 0.5,
+        "turn_lateral_limit": 0.18
+      },
+      "control_override": {
+        "turn_lateral_limit": 0.18
+      }
+    },
+    "sources": {
+      "cli.py": "dbf2b9c70ee9e1e1e47554e7fba288f1e7bbf9f8cd8fdb60794663ebac59f4f7",
+      "evaluate.py": "077285d32535ea42ea2d6f37530c65ca819b80395c323d261a370dffe77ee9e9",
+      "evaluation.json": "58436ec0da8955cbd59cd8147be174b5f49100a25315d5857922d9f7709d976d",
+      "routes.json": "656dd0c47f1466f40413bd19d1e91080fb7064ef23299291213e61f0fc351231",
+      "src/mujoco_sim/__init__.py": "461b00ff89147dc775e5cb7590146d749306e1a4b1b24da209531eae8b61e0e4",
+      "src/mujoco_sim/adapters.py": "cc9c9f87305ccf1eb900955be8c9c9e36cd5e5cb40f8441c1ba486cb39057756",
+      "src/mujoco_sim/assets/go2/assets/base_0.obj": "8cdc53719002a5ee737d867904e534a6d6fa930b616bdcc1b3131e577d4e46c0",
+      "src/mujoco_sim/assets/go2/assets/base_1.obj": "39d2f4724ff64dd5a0640c308fd98902a2946660a8d033ec8dbf368fd5af0dd6",
+      "src/mujoco_sim/assets/go2/assets/base_2.obj": "29cae463f95d678e4ede863c36c9b19b0d356b8340412add10670d70bdcc3095",
+      "src/mujoco_sim/assets/go2/assets/base_3.obj": "f51ba43bf300e68957a0c1aa83eaf3e4926f4ac7e64a0d6c33ae5d21fcbcf5f6",
+      "src/mujoco_sim/assets/go2/assets/base_4.obj": "49ddec0129546e5dd2075d5beacf7f207baa2860aeff7626818e64d2efbf3821",
+      "src/mujoco_sim/assets/go2/assets/calf_0.obj": "4a818cd563c5b7e2a271504442d05fd777d38cbaa028d4a10ad29c9f87bb355e",
+      "src/mujoco_sim/assets/go2/assets/calf_1.obj": "51950c3a153ae3208592df86ea11c9d6756f8f645ebca5caf6910c61aeb03817",
+      "src/mujoco_sim/assets/go2/assets/calf_mirror_0.obj": "6dc0406207a1c08a5953fd5962aca1a270fd06593d30d100205e05c1b32d4af2",
+      "src/mujoco_sim/assets/go2/assets/calf_mirror_1.obj": "f84f5af90b914633165beb3a5493ee499169144c5797dcf04c6eb5842f74b31a",
+      "src/mujoco_sim/assets/go2/assets/foot.obj": "df9e78a7c0110d02557439010f2a5f11f0ec4fd907b32704145dbd6aa7affc0b",
+      "src/mujoco_sim/assets/go2/assets/hip_0.obj": "cc29932ab4d251ce3f72389ec4c1f757e44eee138b87e772b648c2bc76b506cd",
+      "src/mujoco_sim/assets/go2/assets/hip_1.obj": "3fd5bd9b2ef6abe622c0739d3c67eaa1679b19b47132951972c4892a779ea7cf",
+      "src/mujoco_sim/assets/go2/assets/thigh_0.obj": "bb3edfe6a7b04f4f4dff1ce7b05d426ddce941e276cc6372fb542055893c71ec",
+      "src/mujoco_sim/assets/go2/assets/thigh_1.obj": "3a631822f9f7d2114b1b79dcdff5abf95103630abb7d91d1f3b8b18117132ed2",
+      "src/mujoco_sim/assets/go2/assets/thigh_mirror_0.obj": "07abaedce761f1dd48647384ac14ba1959276bc78d5a2a62051e8f1c6093933b",
+      "src/mujoco_sim/assets/go2/assets/thigh_mirror_1.obj": "db984a3e983eabbc9b38183427cca9ab0bb3bdb049f9eab030e06edda36579d6",
+      "src/mujoco_sim/assets/go2/checkpoints.xml": "52779f84587849ecf4d7ef6e9f15b1cde3e78181599d70c74b6c121bc33cf864",
+      "src/mujoco_sim/assets/go2/go2.xml": "343970487681c36d8d442d5324e2d4d51b2c9d48b105dd9cb8e0298a82db0c74",
+      "src/mujoco_sim/assets/go2/scene.xml": "6732bad1c5a3988211dd626985a0049dd4ac7a4992497a452e9ea40ca66e79d5",
+      "src/mujoco_sim/assets/go2/walls.xml": "50f9d41207d73e6f0a81703aeb138a5c38348ceec2a28234359c37e1e3e72089",
+      "src/mujoco_sim/core.py": "a8bc51ea4d94926eddd1bbb9f4bfe36d0f7fdd08cba9ee77d87a557038227740",
+      "src/mujoco_sim/policy/__init__.py": "b35fcfedeb1daf3eb7327f570f5fdbafbc8b953b301469daf219889d0f278d2f",
+      "src/mujoco_sim/policy/himloco_observation.py": "6433dedd55b4aece312215e9d538b0fd97149e03f06b77ba00e785df434a6486",
+      "src/mujoco_sim/policy/history_buffer.py": "1fec7064bce53d47ef793eb57e27f6fbae9cfb23cd29f3553c3a50c280a0e0b7",
+      "src/mujoco_sim/policy/joint_mapping.py": "a3c36a2e9c16db1608dd4fa105bcd8dbc1f881d2e8787eb57439e14d8d6aa72e",
+      "src/mujoco_sim/policy/lidar_ray_adapter.py": "f5eef6767d1e8fff6ccdc780beed81dac36c70d04a316523d2b3e52e27038eb6",
+      "src/mujoco_sim/policy/model_loader.py": "361592ab1bc39cb96790391e8abf5bf9835ecce61cefc6bef11e31c7963331c1",
+      "src/mujoco_sim/policy/navigation_observation.py": "e09a12b6db6b221061577450b634ee9ca7320f0924f134ea4f2a222b8669e24f",
+      "src/mujoco_sim/run.py": "b197571e9a716a5440789bfbe3cdea236cb9d5b6ef7ace25941633ec2e43f147",
+      "src/mujoco_sim/state.py": "815a33b9d183626c6d84dad228da8fa3cc58361dd1629249984497568a64fa22",
+      "src/mujoco_sim/supervisor.py": "5484bfe3eaa4ad9430a6d4f10666be1ba8c2de67af1f00ac9b4bb8474dbbe7b9",
+      "src/mujoco_sim/visualization.py": "800ca2f9ef6dc266b73fec4cdd370848f23e0f9249e56257ee6f5d2a76345288",
+      "src/mujoco_sim/waypoints.py": "e96296fee896cbe73773f51374ce5f0b81ffff96f2188a946c4272dd6bffa3a0"
+    },
+    "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e",
+    "model_sha256": {
+      "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+      "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+    },
+    "versions": {
+      "numpy": "1.24.4",
+      "torch": "2.0.1+cpu",
+      "mujoco": "3.2.3"
+    },
+    "python": "3.10.12",
+    "jobs": 2,
+    "case_count": 30,
+    "cases": [
+      {
+        "id": "checkpoints-simple-center-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-center-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-center-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-center-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-center-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-left-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-left-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-left-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-left-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-left-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-right-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-right-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-right-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-right-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-simple-right-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-center-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-center-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-center-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-center-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-center-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-left-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-left-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-left-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-left-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-left-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-right-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-right-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-right-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-right-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      {
+        "id": "checkpoints-walls-right-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      }
+    ]
+  },
+  "overall": {
+    "safety_unknown_trials": 0,
+    "trials": 30,
+    "states": {
+      "SUCCEEDED": 27,
+      "COLLISION": 3,
+      "FALLEN": 0,
+      "STEP_LIMIT": 0,
+      "WALL_TIMEOUT": 0,
+      "ERROR": 0,
+      "CANCELLED": 0
+    },
+    "success_rate": 0.9,
+    "collision_rate": 0.1,
+    "fall_rate": 0.0,
+    "successful_simulated_seconds_mean": 11.91237037037026,
+    "successful_runner_wall_seconds_mean": 17.46434244818526
+  },
+  "by_scene": {
+    "flat_obstacle": {
+      "safety_unknown_trials": 0,
+      "trials": 15,
+      "states": {
+        "SUCCEEDED": 15,
+        "COLLISION": 0,
+        "FALLEN": 0,
+        "STEP_LIMIT": 0,
+        "WALL_TIMEOUT": 0,
+        "ERROR": 0,
+        "CANCELLED": 0
+      },
+      "success_rate": 1.0,
+      "collision_rate": 0.0,
+      "fall_rate": 0.0,
+      "successful_simulated_seconds_mean": 6.217999999999537,
+      "successful_runner_wall_seconds_mean": 9.040301207666865
+    },
+    "staggered_walls": {
+      "safety_unknown_trials": 0,
+      "trials": 15,
+      "states": {
+        "SUCCEEDED": 12,
+        "COLLISION": 3,
+        "FALLEN": 0,
+        "STEP_LIMIT": 0,
+        "WALL_TIMEOUT": 0,
+        "ERROR": 0,
+        "CANCELLED": 0
+      },
+      "success_rate": 0.8,
+      "collision_rate": 0.2,
+      "fall_rate": 0.0,
+      "successful_simulated_seconds_mean": 19.030333333333665,
+      "successful_runner_wall_seconds_mean": 27.99439399883325
+    }
+  },
+  "results": [
+    {
+      "case": {
+        "id": "checkpoints-simple-center-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3959731161594391,
+            "index": 0,
+            "position_xy": [
+              0.7885783314704895,
+              -0.33480679988861084
+            ],
+            "step": 810
+          },
+          {
+            "distance": 0.39711353182792664,
+            "index": 1,
+            "position_xy": [
+              1.8665258884429932,
+              -0.12401043623685837
+            ],
+            "step": 2240
+          },
+          {
+            "distance": 0.3974120616912842,
+            "index": 2,
+            "position_xy": [
+              2.602602243423462,
+              -0.003370937891304493
+            ],
+            "step": 3060
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.14733910599989,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.07393885167992789,
+        "max_roll": 0.07734248996446559,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 2.779015302658081,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "simulated_seconds": 6.121999999999548,
+        "steps": 3061,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.387083716999769
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-center-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3992750346660614,
+            "index": 0,
+            "position_xy": [
+              0.7460806369781494,
+              -0.3081322908401489
+            ],
+            "step": 1130
+          },
+          {
+            "distance": 0.3977198302745819,
+            "index": 1,
+            "position_xy": [
+              2.009315013885498,
+              -0.14761073887348175
+            ],
+            "step": 2470
+          },
+          {
+            "distance": 0.3988024592399597,
+            "index": 2,
+            "position_xy": [
+              2.6012051105499268,
+              0.002457225229591131
+            ],
+            "step": 3350
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 9.55712945400046,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.12174255868974215,
+        "max_roll": 0.10592302464466535,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 3.097003936767578,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "simulated_seconds": 6.701999999999484,
+        "steps": 3351,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.789240146000338
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-center-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.396634966135025,
+            "index": 0,
+            "position_xy": [
+              0.7903777360916138,
+              -0.3367162048816681
+            ],
+            "step": 790
+          },
+          {
+            "distance": 0.39903512597084045,
+            "index": 1,
+            "position_xy": [
+              1.8310922384262085,
+              -0.11152346432209015
+            ],
+            "step": 2160
+          },
+          {
+            "distance": 0.39280882477760315,
+            "index": 2,
+            "position_xy": [
+              2.607191324234009,
+              -0.00032335289870388806
+            ],
+            "step": 3040
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.069198643000163,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.0620843644804386,
+        "max_roll": 0.07554073096550762,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 2.776693344116211,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "simulated_seconds": 6.081999999999552,
+        "steps": 3041,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.110956651999913
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-center-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39966297149658203,
+            "index": 0,
+            "position_xy": [
+              0.7420021295547485,
+              -0.3052336573600769
+            ],
+            "step": 1020
+          },
+          {
+            "distance": 0.3974173069000244,
+            "index": 1,
+            "position_xy": [
+              2.0392606258392334,
+              -0.14547331631183624
+            ],
+            "step": 2290
+          },
+          {
+            "distance": 0.39586037397384644,
+            "index": 2,
+            "position_xy": [
+              2.610445737838745,
+              0.07037696242332458
+            ],
+            "step": 3000
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.374052670999845,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.1538183130390521,
+        "max_roll": 0.08184244887688909,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 3.073733329772949,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "simulated_seconds": 6.001999999999561,
+        "steps": 3001,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.279058604999591
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-center-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "center",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.25,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3981773555278778,
+            "index": 0,
+            "position_xy": [
+              0.7559309601783752,
+              -0.314603716135025
+            ],
+            "step": 1020
+          },
+          {
+            "distance": 0.39583441615104675,
+            "index": 1,
+            "position_xy": [
+              2.054610252380371,
+              -0.14204926788806915
+            ],
+            "step": 2390
+          },
+          {
+            "distance": 0.39422258734703064,
+            "index": 2,
+            "position_xy": [
+              2.6084699630737305,
+              0.04599654674530029
+            ],
+            "step": 3150
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.488422095000715,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.079292787016697,
+        "max_roll": 0.07807242407408455,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 3.1051814556121826,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "simulated_seconds": 6.301999999999528,
+        "steps": 3151,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.25
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.467121454000335
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-left-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3974233567714691,
+            "index": 0,
+            "position_xy": [
+              0.7528862953186035,
+              -0.19125574827194214
+            ],
+            "step": 950
+          },
+          {
+            "distance": 0.3968835771083832,
+            "index": 1,
+            "position_xy": [
+              1.9212802648544312,
+              -0.01899842359125614
+            ],
+            "step": 2370
+          },
+          {
+            "distance": 0.39191246032714844,
+            "index": 2,
+            "position_xy": [
+              2.6080918312072754,
+              0.12183362990617752
+            ],
+            "step": 3140
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.774804591000247,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.09425163360299864,
+        "max_roll": 0.07384680910584522,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 2.782719612121582,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "simulated_seconds": 6.28199999999953,
+        "steps": 3141,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.37
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.684567641000285
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-left-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39672717452049255,
+            "index": 0,
+            "position_xy": [
+              0.8089406490325928,
+              -0.22769062221050262
+            ],
+            "step": 1080
+          },
+          {
+            "distance": 0.39804956316947937,
+            "index": 1,
+            "position_xy": [
+              2.049016237258911,
+              -0.025020083412528038
+            ],
+            "step": 2340
+          },
+          {
+            "distance": 0.39854615926742554,
+            "index": 2,
+            "position_xy": [
+              2.6113669872283936,
+              0.2083369642496109
+            ],
+            "step": 3040
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.6583122309994,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.12899234289741873,
+        "max_roll": 0.09456316995740932,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 3.088954448699951,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "simulated_seconds": 6.081999999999552,
+        "steps": 3041,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.37
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 11.683185955000226
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-left-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39731132984161377,
+            "index": 0,
+            "position_xy": [
+              0.7530071139335632,
+              -0.1912086457014084
+            ],
+            "step": 910
+          },
+          {
+            "distance": 0.39595216512680054,
+            "index": 1,
+            "position_xy": [
+              1.896470546722412,
+              -0.012177674099802971
+            ],
+            "step": 2390
+          },
+          {
+            "distance": 0.3948294222354889,
+            "index": 2,
+            "position_xy": [
+              2.6051831245422363,
+              0.1168510839343071
+            ],
+            "step": 3180
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.969664472000659,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.08742072671559827,
+        "max_roll": 0.07110818953131605,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 2.753681182861328,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "simulated_seconds": 6.361999999999521,
+        "steps": 3181,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.37
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.068697275999511
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-left-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39895737171173096,
+            "index": 0,
+            "position_xy": [
+              0.7782844305038452,
+              -0.21167634427547455
+            ],
+            "step": 1370
+          },
+          {
+            "distance": 0.3974277973175049,
+            "index": 1,
+            "position_xy": [
+              2.0133216381073,
+              -0.02720445767045021
+            ],
+            "step": 2790
+          },
+          {
+            "distance": 0.39257800579071045,
+            "index": 2,
+            "position_xy": [
+              2.6087918281555176,
+              0.15276646614074707
+            ],
+            "step": 3620
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 10.035126050000144,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.1328801678363535,
+        "max_roll": 0.08151939131038709,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 3.0600223541259766,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "simulated_seconds": 7.2419999999994245,
+        "steps": 3621,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.37
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 13.293441610999253
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-left-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "left",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.37,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39793846011161804,
+            "index": 0,
+            "position_xy": [
+              0.7661684155464172,
+              -0.20199038088321686
+            ],
+            "step": 1190
+          },
+          {
+            "distance": 0.3978397250175476,
+            "index": 1,
+            "position_xy": [
+              2.0663976669311523,
+              -0.022259846329689026
+            ],
+            "step": 2560
+          },
+          {
+            "distance": 0.39929813146591187,
+            "index": 2,
+            "position_xy": [
+              2.6099891662597656,
+              0.20561866462230682
+            ],
+            "step": 3270
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 9.23414109300029,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.17758723200194296,
+        "max_roll": 0.11114046660649894,
+        "min_obstacle_distance": 0.800000011920929,
+        "mode": "simulation",
+        "path_length": 3.0692858695983887,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "simulated_seconds": 6.5419999999995015,
+        "steps": 3271,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.37
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.522328992000439
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-right-s00",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39910614490509033,
+            "index": 0,
+            "position_xy": [
+              0.8152414560317993,
+              -0.47376546263694763
+            ],
+            "step": 730
+          },
+          {
+            "distance": 0.39950287342071533,
+            "index": 1,
+            "position_xy": [
+              1.860878586769104,
+              -0.24449670314788818
+            ],
+            "step": 1970
+          },
+          {
+            "distance": 0.39436906576156616,
+            "index": 2,
+            "position_xy": [
+              2.606149435043335,
+              -0.09978377819061279
+            ],
+            "step": 2800
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.930519501000163,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.09889389521465626,
+        "max_roll": 0.07907261991453486,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 2.8102304935455322,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 0,
+        "simulated_seconds": 5.601999999999605,
+        "steps": 2801,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.13
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.470857983000315
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-right-s01",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39766639471054077,
+            "index": 0,
+            "position_xy": [
+              0.7763992547988892,
+              -0.4488484263420105
+            ],
+            "step": 930
+          },
+          {
+            "distance": 0.394729882478714,
+            "index": 1,
+            "position_xy": [
+              1.8928191661834717,
+              -0.24989992380142212
+            ],
+            "step": 2360
+          },
+          {
+            "distance": 0.3937632143497467,
+            "index": 2,
+            "position_xy": [
+              2.606752872467041,
+              -0.09984602779150009
+            ],
+            "step": 3170
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 10.447361794000244,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.10849481961818487,
+        "max_roll": 0.10431575757108673,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 2.9801158905029297,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 1,
+        "simulated_seconds": 6.341999999999524,
+        "steps": 3171,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.13
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 14.212795692000327
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-right-s02",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3980104625225067,
+            "index": 0,
+            "position_xy": [
+              0.7942739725112915,
+              -0.46071857213974
+            ],
+            "step": 710
+          },
+          {
+            "distance": 0.3937259316444397,
+            "index": 1,
+            "position_xy": [
+              1.8635836839675903,
+              -0.23933818936347961
+            ],
+            "step": 1960
+          },
+          {
+            "distance": 0.39237767457962036,
+            "index": 2,
+            "position_xy": [
+              2.608365774154663,
+              -0.09585725516080856
+            ],
+            "step": 2790
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 8.798979908000547,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.09981907684435054,
+        "max_roll": 0.07866029793564709,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 2.808544635772705,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 2,
+        "simulated_seconds": 5.581999999999607,
+        "steps": 2791,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.13
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.799082133999946
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-right-s03",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39764249324798584,
+            "index": 0,
+            "position_xy": [
+              0.7589746117591858,
+              -0.4362693727016449
+            ],
+            "step": 920
+          },
+          {
+            "distance": 0.39763373136520386,
+            "index": 1,
+            "position_xy": [
+              1.8736268281936646,
+              -0.24701780080795288
+            ],
+            "step": 2300
+          },
+          {
+            "distance": 0.3977169990539551,
+            "index": 2,
+            "position_xy": [
+              2.602980375289917,
+              -0.09645829349756241
+            ],
+            "step": 3120
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 9.81456022600014,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.09399137710071886,
+        "max_roll": 0.0945891202761768,
+        "min_obstacle_distance": 0.699999988079071,
+        "mode": "simulation",
+        "path_length": 2.939056873321533,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 3,
+        "simulated_seconds": 6.241999999999535,
+        "steps": 3121,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.13
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.979729019999468
+    },
+    {
+      "case": {
+        "id": "checkpoints-simple-right-s04",
+        "route_id": "checkpoints-simple",
+        "variant": "right",
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 1.0,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 2.0,
+            "y": 0.13,
+            "radius": 0.4
+          },
+          {
+            "x": 3.0,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3975345492362976,
+            "index": 0,
+            "position_xy": [
+              0.7607812881469727,
+              -0.4375029504299164
+            ],
+            "step": 920
+          },
+          {
+            "distance": 0.3967079222202301,
+            "index": 1,
+            "position_xy": [
+              2.024397850036621,
+              -0.26595696806907654
+            ],
+            "step": 2140
+          },
+          {
+            "distance": 0.39586490392684937,
+            "index": 2,
+            "position_xy": [
+              2.611675500869751,
+              -0.04310331493616104
+            ],
+            "step": 2890
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 9.304906280000068,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.11854141172171481,
+        "max_roll": 0.08456124750653443,
+        "min_obstacle_distance": 0.6000000238418579,
+        "mode": "simulation",
+        "path_length": 3.0567078590393066,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "flat_obstacle",
+        "seed": 4,
+        "simulated_seconds": 5.781999999999585,
+        "steps": 2891,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 1.0,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 2.0,
+            "y": 0.13
+          },
+          {
+            "radius": 0.4,
+            "x": 3.0,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 12.476888027999848
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-center-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3997809588909149,
+            "index": 0,
+            "position_xy": [
+              2.6290717124938965,
+              -0.2939772605895996
+            ],
+            "step": 3150
+          },
+          {
+            "distance": 0.3996129631996155,
+            "index": 1,
+            "position_xy": [
+              5.320553302764893,
+              -0.357056587934494
+            ],
+            "step": 6200
+          },
+          {
+            "distance": 0.3935879170894623,
+            "index": 2,
+            "position_xy": [
+              8.129599571228027,
+              -0.39247334003448486
+            ],
+            "step": 9680
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 28.607021656999677,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.10769720244289971,
+        "max_roll": 0.07272169318458302,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.519660949707031,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 19.362000000000148,
+        "steps": 9681,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 31.90994604700063
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-center-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39968141913414,
+            "index": 0,
+            "position_xy": [
+              2.943192481994629,
+              -0.39734071493148804
+            ],
+            "step": 3060
+          },
+          {
+            "distance": 0.3995770514011383,
+            "index": 1,
+            "position_xy": [
+              5.297145366668701,
+              -0.3442554473876953
+            ],
+            "step": 6500
+          },
+          {
+            "distance": 0.3946792483329773,
+            "index": 2,
+            "position_xy": [
+              8.139365196228027,
+              -0.39271125197410583
+            ],
+            "step": 9900
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 29.04647029499938,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.11215975894422409,
+        "max_roll": 0.07468945767204535,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.6165132522583,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 1,
+        "simulated_seconds": 19.801999999999904,
+        "steps": 9901,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 32.200121255999875
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-center-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3987341523170471,
+            "index": 0,
+            "position_xy": [
+              2.6535208225250244,
+              -0.3134276568889618
+            ],
+            "step": 3230
+          },
+          {
+            "distance": 0.39934101700782776,
+            "index": 1,
+            "position_xy": [
+              5.322956085205078,
+              -0.35795068740844727
+            ],
+            "step": 6150
+          },
+          {
+            "distance": 0.3937174081802368,
+            "index": 2,
+            "position_xy": [
+              8.143784523010254,
+              -0.3912752866744995
+            ],
+            "step": 9530
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 28.486021933999837,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.11740745519463941,
+        "max_roll": 0.07612921229097391,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.518630027770996,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 2,
+        "simulated_seconds": 19.062000000000314,
+        "steps": 9531,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 31.60153149799953
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-center-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39821773767471313,
+            "index": 0,
+            "position_xy": [
+              2.6225318908691406,
+              -0.2856374680995941
+            ],
+            "step": 3260
+          },
+          {
+            "distance": 0.39850372076034546,
+            "index": 1,
+            "position_xy": [
+              5.335039138793945,
+              -0.36275768280029297
+            ],
+            "step": 6290
+          },
+          {
+            "distance": 0.3923417925834656,
+            "index": 2,
+            "position_xy": [
+              8.145962715148926,
+              -0.38964027166366577
+            ],
+            "step": 9680
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 29.243241555999703,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.11467011526477798,
+        "max_roll": 0.07366507840617562,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.619274139404297,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 3,
+        "simulated_seconds": 19.362000000000148,
+        "steps": 9681,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 32.521794665000016
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-center-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "center",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.0,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.0,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "COLLISION",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3952065706253052,
+            "index": 0,
+            "position_xy": [
+              2.968083143234253,
+              -0.3892979919910431
+            ],
+            "step": 3000
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 15.825703340000473,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.10441303143750903,
+        "max_roll": 0.06725602965283183,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 5.652848720550537,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 4,
+        "simulated_seconds": 10.400000000000142,
+        "steps": 5200,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 18.883354110000255
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-left-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3915156424045563,
+            "index": 0,
+            "position_xy": [
+              2.538642644882202,
+              -0.030682776123285294
+            ],
+            "step": 2730
+          },
+          {
+            "distance": 0.3993242084980011,
+            "index": 1,
+            "position_xy": [
+              5.333383560180664,
+              -0.24290326237678528
+            ],
+            "step": 5320
+          },
+          {
+            "distance": 0.3995705246925354,
+            "index": 2,
+            "position_xy": [
+              8.126897811889648,
+              -0.27866417169570923
+            ],
+            "step": 8720
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 25.379788580999957,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.13544945248144924,
+        "max_roll": 0.06358764066925897,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.082775115966797,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 17.44200000000121,
+        "steps": 8721,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 28.49971451300007
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-left-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "COLLISION",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3943612575531006,
+            "index": 0,
+            "position_xy": [
+              2.9752373695373535,
+              -0.2671177387237549
+            ],
+            "step": 3080
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 14.97898324200014,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.10128534749212019,
+        "max_roll": 0.076741342705357,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 5.649921894073486,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 1,
+        "simulated_seconds": 10.36400000000013,
+        "steps": 5182,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 18.177918026999578
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-left-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3926260471343994,
+            "index": 0,
+            "position_xy": [
+              2.51651930809021,
+              0.03575221076607704
+            ],
+            "step": 2730
+          },
+          {
+            "distance": 0.39900198578834534,
+            "index": 1,
+            "position_xy": [
+              5.346646308898926,
+              -0.24835477769374847
+            ],
+            "step": 5410
+          },
+          {
+            "distance": 0.3964974880218506,
+            "index": 2,
+            "position_xy": [
+              8.129596710205078,
+              -0.2753913402557373
+            ],
+            "step": 8770
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 25.96529844500037,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.14090531969859585,
+        "max_roll": 0.07022671709549788,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.072530746459961,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 2,
+        "simulated_seconds": 17.542000000001156,
+        "steps": 8771,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 29.200852864999433
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-left-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3893788456916809,
+            "index": 0,
+            "position_xy": [
+              2.522797107696533,
+              0.023388458415865898
+            ],
+            "step": 2830
+          },
+          {
+            "distance": 0.3979461193084717,
+            "index": 1,
+            "position_xy": [
+              5.326536655426025,
+              -0.2381502389907837
+            ],
+            "step": 5410
+          },
+          {
+            "distance": 0.39557433128356934,
+            "index": 2,
+            "position_xy": [
+              8.123031616210938,
+              -0.2749032974243164
+            ],
+            "step": 8880
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 26.035064699999566,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.11812292126107793,
+        "max_roll": 0.06461185609025602,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.157745361328125,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 3,
+        "simulated_seconds": 17.762000000001034,
+        "steps": 8881,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 29.2031937010006
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-left-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "left",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": 0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": 0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.38864219188690186,
+            "index": 0,
+            "position_xy": [
+              2.5124239921569824,
+              0.09123358130455017
+            ],
+            "step": 2850
+          },
+          {
+            "distance": 0.3993476927280426,
+            "index": 1,
+            "position_xy": [
+              5.324580192565918,
+              -0.23875686526298523
+            ],
+            "step": 5410
+          },
+          {
+            "distance": 0.39505690336227417,
+            "index": 2,
+            "position_xy": [
+              8.142006874084473,
+              -0.2728172540664673
+            ],
+            "step": 8810
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 25.548623182000483,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.12337987371182806,
+        "max_roll": 0.068713334364673,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.258729934692383,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 4,
+        "simulated_seconds": 17.622000000001112,
+        "steps": 8811,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 28.701109511999675
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-right-s00",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 0,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "COLLISION",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39988836646080017,
+            "index": 0,
+            "position_xy": [
+              2.6192786693573,
+              -0.4047914743423462
+            ],
+            "step": 3280
+          },
+          {
+            "distance": 0.39280158281326294,
+            "index": 1,
+            "position_xy": [
+              5.4456706047058105,
+              -0.5090262293815613
+            ],
+            "step": 6870
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 22.917133229000683,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.09200142120507644,
+        "max_roll": 0.0543120586907509,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 7.536940097808838,
+        "reached_indices": [
+          0,
+          1
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 15.976000000002005,
+        "steps": 7988,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 2,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 26.095644818000437
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-right-s01",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 1,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3997921645641327,
+            "index": 0,
+            "position_xy": [
+              2.935307025909424,
+              -0.5182300806045532
+            ],
+            "step": 3070
+          },
+          {
+            "distance": 0.3985854685306549,
+            "index": 1,
+            "position_xy": [
+              5.298075199127197,
+              -0.4636520743370056
+            ],
+            "step": 6060
+          },
+          {
+            "distance": 0.3971174359321594,
+            "index": 2,
+            "position_xy": [
+              8.128536224365234,
+              -0.5160908699035645
+            ],
+            "step": 9380
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 27.300898365999274,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.10351342222935254,
+        "max_roll": 0.06849725921255842,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.682787895202637,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 1,
+        "simulated_seconds": 18.76200000000048,
+        "steps": 9381,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 30.501135671000156
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-right-s02",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 2,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3935582935810089,
+            "index": 0,
+            "position_xy": [
+              2.81837797164917,
+              -0.5050012469291687
+            ],
+            "step": 3280
+          },
+          {
+            "distance": 0.39829322695732117,
+            "index": 1,
+            "position_xy": [
+              5.290738582611084,
+              -0.4588910639286041
+            ],
+            "step": 6380
+          },
+          {
+            "distance": 0.3985828459262848,
+            "index": 2,
+            "position_xy": [
+              8.12983512878418,
+              -0.5174646973609924
+            ],
+            "step": 9700
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 28.09345699500045,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.0729654835022799,
+          "y": 0.07165239792949589,
+          "yaw": -0.07739638696632775
+        },
+        "max_pitch": 0.10567356147783646,
+        "max_roll": 0.08246479590265071,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.481389999389648,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 2,
+        "simulated_seconds": 19.402000000000125,
+        "steps": 9701,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 31.302899060000527
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-right-s03",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 3,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.39987772703170776,
+            "index": 0,
+            "position_xy": [
+              2.918937921524048,
+              -0.5194290280342102
+            ],
+            "step": 3040
+          },
+          {
+            "distance": 0.3989941477775574,
+            "index": 1,
+            "position_xy": [
+              5.264369964599609,
+              -0.44198575615882874
+            ],
+            "step": 7250
+          },
+          {
+            "distance": 0.39571458101272583,
+            "index": 2,
+            "position_xy": [
+              8.215559005737305,
+              -0.4984656274318695
+            ],
+            "step": 10560
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 30.762879122999948,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.041925659665297384,
+          "y": 0.007076676047352293,
+          "yaw": -0.022697105189436795
+        },
+        "max_pitch": 0.12068579268824282,
+        "max_roll": 0.08094003049853445,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 10.151460647583008,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 3,
+        "simulated_seconds": 21.121999999999172,
+        "steps": 10561,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 34.008595122999395
+    },
+    {
+      "case": {
+        "id": "checkpoints-walls-right-s04",
+        "route_id": "checkpoints-walls",
+        "variant": "right",
+        "scene": "staggered_walls",
+        "seed": 4,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "waypoints": [
+          {
+            "x": 2.9,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 5.5,
+            "y": -0.12,
+            "radius": 0.4
+          },
+          {
+            "x": 8.1,
+            "y": -0.12,
+            "radius": 0.4
+          }
+        ],
+        "steps": 15000,
+        "wall_timeout_seconds": 120,
+        "control": {
+          "speed_scale": 1.0,
+          "command_filter_alpha": 0.5,
+          "turn_lateral_limit": 0.18
+        },
+        "source_digest": "aaa0970c211d3282716fa2841b93b19494363bb109b4884d7d67d5b15150f19e"
+      },
+      "state": "SUCCEEDED",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3919869661331177,
+            "index": 0,
+            "position_xy": [
+              2.939422369003296,
+              -0.5099995732307434
+            ],
+            "step": 3030
+          },
+          {
+            "distance": 0.39915764331817627,
+            "index": 1,
+            "position_xy": [
+              5.262599945068359,
+              -0.44088634848594666
+            ],
+            "step": 7270
+          },
+          {
+            "distance": 0.3972248136997223,
+            "index": 2,
+            "position_xy": [
+              8.219650268554688,
+              -0.49877628684043884
+            ],
+            "step": 10560
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 31.46396315200036,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": -0.04223230564201048,
+          "y": -0.06349343452308548,
+          "yaw": -0.01814125896752762
+        },
+        "max_pitch": 0.12036842458621642,
+        "max_roll": 0.0934406627546365,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 10.165506362915039,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 4,
+        "simulated_seconds": 21.121999999999172,
+        "steps": 10561,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": -0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": -0.12
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      },
+      "returncode": 0,
+      "process_wall_seconds": 34.59905686500042
+    }
+  ]
+}

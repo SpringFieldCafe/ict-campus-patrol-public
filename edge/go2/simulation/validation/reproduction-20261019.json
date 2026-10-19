@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "kind": "SAME_HOST_CLEAN_CHECKOUT_FRESH_VENV",
+  "result": "passed",
+  "source": {
+    "baseline_commit": "ff70c7697f1dc41858009c8c142441b64deeba5d",
+    "archive_scope": "edge/go2/simulation",
+    "export_method": "git archive --format=tar <baseline> edge/go2/simulation; extract into new /tmp directory",
+    "archive_sha256": "f314a79e07777564303a70c6ca9ec739fe2e38a9e9343d4ef4b7d7e82a7b7209",
+    "old_archive_present_at_start": false,
+    "venv_present_at_start": false,
+    "weights_present_at_start": false,
+    "all_exported_files_match_git_baseline": true
+  },
+  "environment": {
+    "python": "3.10.12",
+    "sys_prefix": "CLEAN_CHECKOUT/edge/go2/simulation/.venv",
+    "base_prefix": "/usr",
+    "enable_user_site": false,
+    "venv_config": "home = /usr/bin\nimplementation = CPython\nuv = 0.13.1\nversion_info = 3.10.12\ninclude-system-site-packages = false\n",
+    "module_files": {
+      "numpy": "CLEAN_CHECKOUT/edge/go2/simulation/.venv/lib/python3.10/site-packages/numpy/__init__.py",
+      "torch": "CLEAN_CHECKOUT/edge/go2/simulation/.venv/lib/python3.10/site-packages/torch/__init__.py",
+      "mujoco": "CLEAN_CHECKOUT/edge/go2/simulation/.venv/lib/python3.10/site-packages/mujoco/__init__.py"
+    },
+    "packages": {
+      "MarkupSafe": "3.0.4",
+      "torch": "2.0.1+cpu",
+      "etils": "1.13.0",
+      "Jinja2": "3.1.6",
+      "exceptiongroup": "1.3.1",
+      "numpy": "1.24.4",
+      "filelock": "4.1.0",
+      "PyOpenGL": "3.1.10",
+      "importlib_resources": "7.1.0",
+      "iniconfig": "2.3.1",
+      "mujoco": "3.2.3",
+      "packaging": "26.3",
+      "networkx": "3.4.2",
+      "typing_extensions": "4.16.0",
+      "pluggy": "1.7.0",
+      "mpmath": "1.3.0",
+      "glfw": "2.11.0",
+      "fsspec": "2026.9.0",
+      "sympy": "1.14.0",
+      "zipp": "4.1.1",
+      "pytest": "8.3.5",
+      "tomli": "2.5.0",
+      "absl-py": "2.5.1"
+    },
+    "os": {
+      "name": "Ubuntu",
+      "version": "22.04.5"
+    },
+    "installer": "uv 0.13.1 (x86_64-unknown-linux-gnu)",
+    "locked_package_count": 23,
+    "all_installed_versions_match_lock": true,
+    "fresh_python_environment": true,
+    "shared_host_prerequisites": [
+      "system Python 3.10.12",
+      "uv tool",
+      "ffmpeg 4.4.2",
+      "EGL/OpenGL driver"
+    ],
+    "cache_note": "Existing package download cache reused; setup fetched CPU torch wheel from configured index. Original simulation venv was not copied or used."
+  },
+  "asset_source": {
+    "user_statement_date": "2026-10-19",
+    "user_statement": "Self-trained local assets in the previously provided SEA-Nav folder",
+    "navigation": {
+      "sea_nav_relative_path": "artifacts/go2_onboard/sea_nav_policy_peer_model_2000.pt",
+      "sha256": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+      "checkpoint_sha256": "b59e864172c25f1f2377d10a9263600d5f45f143080283874408677678f0a187",
+      "checkpoint_iteration": 2000,
+      "exported_at_utc": "2026-08-04T14:06:22.544109+00:00",
+      "metadata_sha256": "27b1b431b3890e86f8017a30174ced5e5eeaef71821e61fd60c40d39bb3f5750"
+    },
+    "himloco": {
+      "sea_nav_relative_path": "models/locomotion/himloco/policy_1.pt",
+      "sha256": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a",
+      "matches_local_rough_go2_training_export": true,
+      "training_export_reference": "HIMLOCO_ROOT/legged_gym/logs/rough_go2/exported/policies/policy_1.pt",
+      "specific_training_iteration_verified": false
+    },
+    "delivery": "Explicit prepare-assets import from team-owned local export; no weight redistribution or public download added."
+  },
+  "setup": {
+    "command": [
+      "SIM_UV=<existing uv>",
+      "bash",
+      "edge/go2/simulation/setup.sh",
+      "/usr/bin/python3.10"
+    ],
+    "returncode": 0,
+    "note": "System Python lacks ensurepip; uv was explicitly supplied."
+  },
+  "commands": [
+    {
+      "step": "prepare-assets",
+      "command": [
+        "bash",
+        "edge/go2/simulation/run.sh",
+        "prepare-assets",
+        "--navigation",
+        "LOCAL_REPOSITORY/edge/go2/source/sea_nav/artifacts/go2_onboard/sea_nav_policy_peer_model_2000.pt",
+        "--himloco",
+        "LOCAL_REPOSITORY/edge/go2/source/sea_nav/models/locomotion/himloco/policy_1.pt"
+      ],
+      "returncode": 0,
+      "duration_seconds": 0.46
+    },
+    {
+      "step": "doctor",
+      "command": [
+        "bash",
+        "edge/go2/simulation/run.sh",
+        "doctor"
+      ],
+      "returncode": 0,
+      "duration_seconds": 0.37
+    },
+    {
+      "step": "tests",
+      "command": [
+        "bash",
+        "edge/go2/simulation/run.sh",
+        "test"
+      ],
+      "returncode": 0,
+      "duration_seconds": 14.82
+    },
+    {
+      "step": "demo",
+      "command": [
+        "bash",
+        "edge/go2/simulation/run.sh",
+        "demo",
+        "--route",
+        "checkpoints-simple",
+        "--output",
+        "LOCAL_REPOSITORY/.local/reproduction-20261019/demo"
+      ],
+      "returncode": 0,
+      "duration_seconds": 28.17
+    }
+  ],
+  "simulation_tests": {
+    "passed": 13,
+    "log": "reproduction-20261019-tests.txt"
+  },
+  "demo": {
+    "waypoints_reached": 3,
+    "waypoints_total": 3,
+    "reached_indices": [
+      0,
+      1,
+      2
+    ],
+    "collision": false,
+    "fallen": false,
+    "simulated_seconds": 6.241999999999535,
+    "elapsed_s": 22.18786943200007,
+    "model_sha256": {
+      "navigation": "d1242c74ff56189f20d7a12948d86078287651cd1f70215d9c308d04f4b561de",
+      "himloco": "456218effd3a4befdbcd54f85c4474c1aa282df1dd81894bd7761543c18dd11a"
+    },
+    "runtime_versions": {
+      "numpy": "1.24.4",
+      "torch": "2.0.1+cpu",
+      "mujoco": "3.2.3",
+      "python": "3.10.12"
+    }
+  },
+  "video": {
+    "artifact": "LOCAL_REPOSITORY/.local/reproduction-20261019/demo/simulation.mp4",
+    "bytes": 160517,
+    "sha256": "c60cd7ce78f8b4ab3c43973054441eeddb2e9161340acd537824df7d594c12ad",
+    "codec": "h264",
+    "width": 640,
+    "height": 480,
+    "duration_seconds": 6.26,
+    "full_decode_verified": true,
+    "decoder": "system ffmpeg; decode to null, no output file"
+  },
+  "public_artifact_sha256": {
+    "reproduction-20261019-doctor.json": "b35af5f0349074338f5df3113369a4191b657987f5008d09ca9abdb12786d37c",
+    "reproduction-20261019-summary.json": "1b12212b8603ed3acb52fc35de52dc954a2888ba93ad37c92371b45411cf1e4b",
+    "reproduction-20261019-setup.txt": "fcba2e610709f3bba28dc0cb9c1dd9c2ccc76c4586241463338546bdd26fec89",
+    "reproduction-20261019-tests.txt": "7ad3b1e0f82c0a519662e0e15b4227c353c6b497025866ef15ed60b30acf5ed8"
+  },
+  "contributions": {
+    "codearts": "Primary author of REPRODUCTION.md, README model instructions, UPSTREAM model provenance and asset manifest provenance; also authored exact requested corrections. Original generated text and patches archived.",
+    "codex": "Scope/fact checks, new environment installation, actual tests/demo, review/application, evidence collection.",
+    "document_commit": "d74fc336692b1deb53416dd31f999f86d422ef4a"
+  },
+  "limits": [
+    "Not a new physical machine or full clean operating system installation",
+    "Not a zero-cache dependency install",
+    "Not training reproduction, a new model, or 30-case evaluation rerun",
+    "No public weight redistribution, cloud deployment or robot hardware verification"
+  ],
+  "documentation_source": "docs/codearts/2026-10-19-reproduction-verification.md"
+}

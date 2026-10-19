@@ -1,0 +1,250 @@
+{
+  "kind": "EXPLICIT_REPLAY_NOT_ORIGINAL_BATCH_VIDEO",
+  "records": [
+    {
+      "case_id": "checkpoints-walls-center-s00",
+      "campaign": "evaluation-before-control",
+      "replay": "walls-success-replay",
+      "state": "SUCCEEDED",
+      "trajectory_sha256": "c4f6ac841226d789f3551e05630118a04d4599601f9f86766119dabad946a608",
+      "identical_trajectory": true,
+      "video_sha256": "4903ffbddf9199f77a7d1522daebaff430fb75e61e97e8c7e330113cdf1c65b7",
+      "video_bytes": 350349,
+      "artifact": ".local/simulation/walls-success-replay/checkpoints-walls-center-s00/simulation.mp4",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3997809588909149,
+            "index": 0,
+            "position_xy": [
+              2.6290717124938965,
+              -0.2939772605895996
+            ],
+            "step": 3150
+          },
+          {
+            "distance": 0.3996129631996155,
+            "index": 1,
+            "position_xy": [
+              5.320553302764893,
+              -0.357056587934494
+            ],
+            "step": 6200
+          },
+          {
+            "distance": 0.3935879170894623,
+            "index": 2,
+            "position_xy": [
+              8.129599571228027,
+              -0.39247334003448486
+            ],
+            "step": 9680
+          }
+        ],
+        "collision": false,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 2,
+        "elapsed_s": 43.225206455999796,
+        "fallen": false,
+        "goal_reached": true,
+        "initial_pose": {
+          "x": 0.055107496244007695,
+          "y": 0.041272704470448396,
+          "yaw": -0.013862874341559334
+        },
+        "max_pitch": 0.10769720244289971,
+        "max_roll": 0.07272169318458302,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 9.519660949707031,
+        "reached_indices": [
+          0,
+          1,
+          2
+        ],
+        "scene": "staggered_walls",
+        "seed": 0,
+        "simulated_seconds": 19.362000000000148,
+        "steps": 9681,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "SUCCEEDED",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.0
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.0
+          }
+        ],
+        "waypoints_reached": 3,
+        "waypoints_total": 3
+      }
+    },
+    {
+      "case_id": "checkpoints-walls-left-s01",
+      "campaign": "evaluation-before-control",
+      "replay": "walls-failure-replay",
+      "state": "COLLISION",
+      "trajectory_sha256": "564bf54b7d38c10a417ba48e8ab70f900f442f998c495566504c72855e5eca07",
+      "identical_trajectory": true,
+      "video_sha256": "892a30ab50785ba096dfc44649e7065831e91bcaa290e2799c9040a62dead444",
+      "video_bytes": 221795,
+      "artifact": ".local/simulation/walls-failure-replay/checkpoints-walls-left-s01/simulation.mp4",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3943612575531006,
+            "index": 0,
+            "position_xy": [
+              2.9752373695373535,
+              -0.2671177387237549
+            ],
+            "step": 3080
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 22.49714133099951,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.10128534749212019,
+        "max_roll": 0.076741342705357,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 5.649921894073486,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 1,
+        "simulated_seconds": 10.36400000000013,
+        "steps": 5182,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3
+      }
+    },
+    {
+      "case_id": "checkpoints-walls-left-s01",
+      "campaign": "evaluation-final",
+      "replay": "walls-final-failure-replay",
+      "state": "COLLISION",
+      "trajectory_sha256": "564bf54b7d38c10a417ba48e8ab70f900f442f998c495566504c72855e5eca07",
+      "identical_trajectory": true,
+      "video_sha256": "892a30ab50785ba096dfc44649e7065831e91bcaa290e2799c9040a62dead444",
+      "video_bytes": 221795,
+      "artifact": ".local/simulation/walls-final-failure-replay/checkpoints-walls-left-s01/simulation.mp4",
+      "summary": {
+        "checkpoint_events": [
+          {
+            "distance": 0.3943612575531006,
+            "index": 0,
+            "position_xy": [
+              2.9752373695373535,
+              -0.2671177387237549
+            ],
+            "step": 3080
+          }
+        ],
+        "collision": true,
+        "collision_sample_seconds": 0.002,
+        "control": {
+          "command_filter_alpha": 0.5,
+          "speed_scale": 1.0,
+          "turn_lateral_limit": 0.18,
+          "velocity_frame": "body"
+        },
+        "current_waypoint_index": 1,
+        "elapsed_s": 33.29082227100025,
+        "fallen": false,
+        "goal_reached": false,
+        "initial_pose": {
+          "x": -0.058501720942015806,
+          "y": 0.05558939790995722,
+          "yaw": 0.04603735584335429
+        },
+        "max_pitch": 0.10128534749212019,
+        "max_roll": 0.076741342705357,
+        "min_obstacle_distance": 0.30000001192092896,
+        "mode": "simulation",
+        "path_length": 5.649921894073486,
+        "reached_indices": [
+          0
+        ],
+        "scene": "staggered_walls",
+        "seed": 1,
+        "simulated_seconds": 10.36400000000013,
+        "steps": 5182,
+        "steps_requested": 15000,
+        "stop_on_goal": true,
+        "termination_reason": "COLLISION",
+        "waypoints": [
+          {
+            "radius": 0.4,
+            "x": 2.9,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 5.5,
+            "y": 0.12
+          },
+          {
+            "radius": 0.4,
+            "x": 8.1,
+            "y": 0.12
+          }
+        ],
+        "waypoints_reached": 1,
+        "waypoints_total": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "ARCHIVED_DEVELOPMENT_GEOMETRY",
+  "units": "metres",
+  "mujoco_size_is_half_extent": true,
+  "geoms": [
+    {
+      "name": "wall_1",
+      "type": "box",
+      "pos": "1.6 0 .4",
+      "size": ".12 .45 .4",
+      "rgba": ".72 .48 .26 1"
+    },
+    {
+      "name": "wall_2",
+      "type": "box",
+      "pos": "3.6 -.4 .4",
+      "size": ".12 .5 .4",
+      "rgba": ".62 .43 .28 1"
+    },
+    {
+      "name": "wall_3",
+      "type": "box",
+      "pos": "5.6 .4 .4",
+      "size": ".12 .5 .4",
+      "rgba": ".75 .55 .3 1"
+    }
+  ]
+}

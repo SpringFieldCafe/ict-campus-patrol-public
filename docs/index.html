@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Campus Patrol 受限区域现场查看助手：真实本地验证、30 次仿真评测与许可明确的应用源码。">
+  <meta name="color-scheme" content="light">
+  <title>Campus Patrol · 现场观察，有据可循</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Campus Patrol 首页"><img src="assets/mark.svg" width="34" height="34" alt=""><span>Campus<span class="brand-light">Patrol</span></span></a>
+    <nav aria-label="主导航"><a href="#evidence">成果</a><a href="#results">评测</a><a href="#source">开源</a><a class="source-link" href="https://github.com/SpringFieldCafe/ict-campus-patrol-public">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> ICT 创新赛赛题 1 · 项目成果</p>
+        <h1>现场观察，<br><span>有据可循。</span></h1>
+        <p class="intro">面向受限区域的现场查看助手。把预设路线、任务状态与结果归档连接起来，让每一次演示都有记录可查。</p>
+        <p class="hero-note">本页为静态成果展示：可查看真实历史结果，不接收新任务。</p>
+        <div class="hero-actions"><a class="button primary" href="#results">查看真实评测 <span aria-hidden="true">↓</span></a><a class="button secondary" href="https://github.com/SpringFieldCafe/ict-campus-patrol-public">浏览公开源码 <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="mission-board" aria-label="已验证的本地任务链路示意">
+        <div class="board-head"><span>MISSION / 本地验证</span><span class="board-tag">历史记录</span></div>
+        <div class="board-route" aria-hidden="true"><div class="route-line"></div><div class="route-stop"><span>01</span><b>任务</b><small>预设路线</small></div><div class="route-stop"><span>02</span><b>导航</b><small>三点按序</small></div><div class="route-stop"><span>03</span><b>归档</b><small>状态与录像</small></div></div>
+        <div class="board-data"><div><small>场景</small><strong>02</strong></div><div><small>配对用例</small><strong>30</strong></div><div><small>每条路线目标</small><strong>03</strong></div></div>
+        <div class="board-foot"><span class="dot"></span> 浏览器 → API → MuJoCo → 结果记录</div>
+      </div>
+    </section>
+    <div class="evidence-strip"><div class="wrap strip-inner"><span>已验证的本地链路</span><span>真实数据，保留失败</span><span>公开应用源码与依赖锁</span><span>实机与云问答待验证</span></div></div>
+    <section class="section wrap" id="evidence">
+      <div class="section-heading"><div><p class="eyebrow">01 / 从任务到证据</p><h2>看得到过程，也查得到结果。</h2></div><p>网页工作台、单任务调度与远程任务通道已做本机验证。真实运动、相机照片和华为视觉模型的完整闭环仍待验证。</p></div>
+      <div class="evidence-grid">
+        <figure class="screen-card"><a href="images/2026-10-16-history.png"><img src="images/2026-10-16-history.png" alt="真实本地任务记录页面，显示历史任务及其执行结果" loading="lazy" width="1440" height="1000"></a><figcaption><span>任务记录</span> 本地真实界面截图 · 2026-10-16</figcaption></figure>
+        <div class="feature-list"><article><span>01</span><div><h3>有边界的任务入口</h3><p>按预设路线执行，一次一个任务。忙时拒绝，支持取消与总超时，不自动重跑。</p></div></article><article><span>02</span><div><h3>独立的执行与回传</h3><p>服务端和执行端分开；断线后保留本地结果，重连补传原录像。本机独立 HTTP 角色已验证，跨公网待验证。</p></div></article><article><span>03</span><div><h3>结果与来源一起保留</h3><p>区分实际仿真、接口替身和未验证能力。成功、碰撞及较差的候选参数均保留记录。</p></div></article></div>
+      </div>
+    </section>
+    <section class="results-section" id="results"><div class="wrap section">
+      <div class="section-heading"><div><p class="eyebrow">02 / 实测而非推测</p><h2>30 次评测，失败也在场。</h2></div><p>两个固定场景，每个场景 3 组目标 × 5 个起始位姿。以下展示 2026-10-17 的最终历史结果，不代表实机成绩。</p></div>
+      <div class="result-controls" role="group" aria-label="选择评测场景"><button class="scenario active" data-scene="staggered_walls" aria-pressed="true">错位短墙 <span>12 / 15</span></button><button class="scenario" data-scene="flat_obstacle" aria-pressed="false">侧箱对照 <span>15 / 15</span></button></div>
+      <div class="results-card">
+        <div class="result-overview"><div><p class="eyebrow" id="scene-label">错位短墙 / STAGGERED WALLS</p><div class="score"><strong id="success-rate">80</strong><span>%</span></div><p id="scene-description">12 次成功，3 次碰撞。保留原模型与 0.18 m/s 横向限速。</p></div><div class="stat-list"><div><span>成功</span><strong id="success-count">12</strong></div><div><span>碰撞</span><strong id="collision-count">3</strong></div><div><span>成功用例平均模拟时间</span><strong><span id="mean-time">19.03</span> <small>s</small></strong></div></div></div>
+        <div class="case-heading"><span>选择用例，查看原始结果</span><span><i class="legend success"></i>成功 <i class="legend collision"></i>碰撞</span></div>
+        <div class="case-grid" id="case-grid" aria-label="15 个历史评测用例"></div>
+        <div class="case-detail" id="case-detail" aria-live="polite">正在读取公开的历史数据…</div>
+        <noscript><p>短墙 12/15 成功、3 次碰撞；侧箱 15/15 成功。启用 JavaScript 可逐项查看，或直接下载下方 JSON。</p></noscript>
+      </div>
+      <div class="results-note"><p><strong>方法边界：</strong>成功须全点按序到达且无碰撞、无跌倒。墙体场景成功率为 80%；整体 27/30 不能替代墙体成绩。模拟时间不是实机速度。</p><a href="data/evaluation.json" download>下载展示数据 JSON <span aria-hidden="true">↗</span></a></div>
+      <figure class="plot-card"><img src="images/2026-10-17-wall-evaluation.png" alt="真实短墙轨迹与参数对照图，包含成功和碰撞轨迹；候选限速0.4米每秒仅4/15成功，最终保留0.18" loading="lazy"><figcaption><span>原始轨迹与参数对照</span><p>0.4 m/s 候选仅 4/15 成功，最终保留 0.18 m/s。三阶段为同一批用例的对照与复跑，累计执行次数不等于独立随机环境数。</p><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/tree/main/edge/go2/simulation/validation/walls">查看完整评测记录 ↗</a></figcaption></figure>
+    </div></section>
+    <section class="section wrap" id="source">
+      <div class="section-heading"><div><p class="eyebrow">03 / 开放，同时说明边界</p><h2>可以公开的，让它可查看。</h2></div><p>这是许可明确的公开子集。源码、依赖锁、相关测试、评测记录与来源说明一起保留，逐步补齐可验证的交付材料。</p></div>
+      <div class="source-grid"><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/tree/main/apps/web"><span class="source-number">01</span><h3>网页工作台 <span>↗</span></h3><p>Vue / TypeScript；保留 V3 Admin Vite 的 MIT 来源和许可。</p><small>应用源码 · 依赖 API</small></a><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/tree/main/cloud/backend"><span class="source-number">02</span><h3>任务与协议后端 <span>↗</span></h3><p>FastAPI、账号、任务记录、远程协议与相关测试。</p><small>应用源码 · 非在线服务</small></a><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/tree/main/evaluation/vision"><span class="source-number">03</span><h3>视觉评测准备 <span>↗</span></h3><p>清单、批量入口与人工核对流程；0 张真实图片、0 次请求。</p><small>未形成视觉效果成绩</small></a></div>
+      <div class="boundary-panel"><div><p class="eyebrow">公开状态说明</p><h3>展示地址已准备，完整交付继续补证。</h3></div><ul><li>本页展示历史成果，不运行登录、导航或云端问答。</li><li>旧导航实现、机器人模型资产与策略权重暂未公开；此子集不能独立复现真实仿真或实机任务。</li><li>华为云业务部署、云服务关联、真实相机与视觉模型效果仍待完成。</li><li>GitHub Pages 托管不等于已满足全部 ICT 赛事要求。</li></ul></div>
+      <div class="document-links"><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/blob/main/docs/RELEASE_SCOPE.md">公开范围说明 ↗</a><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/blob/main/docs/PUBLIC_APPLICATION.md">运行与验证说明 ↗</a><a href="https://github.com/SpringFieldCafe/ict-campus-patrol-public/blob/main/docs/codearts-evidence.md">CodeArts 真实贡献 ↗</a><a href="https://e.huawei.com/cn/talent/#/ict/innovation-details?zoneCode=027425&amp;compId=85132021&amp;type=C002&amp;zoneId=98269700">ICT 官方赛题 ↗</a></div>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#"><img src="assets/mark.svg" width="28" height="28" alt="">Campus Patrol</a><p>原创内容 Apache-2.0 · 第三方内容保留各自许可</p><span>资料核对 2026.10.19</span></footer>
+</body>
+</html>
