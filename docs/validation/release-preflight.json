@@ -1,8 +1,8 @@
 {
   "date": "2026-10-19",
   "scope": "tracked and non-ignored release candidates; not ignored runtime data",
-  "files_checked_excluding_this_report": 302,
-  "bytes": 3173124,
+  "files_checked_excluding_this_report": 304,
+  "bytes": 3176928,
   "findings": [],
   "codearts_original_request_response_hashes": "all four matched",
   "excluded_local_dependency_symlinks": true,

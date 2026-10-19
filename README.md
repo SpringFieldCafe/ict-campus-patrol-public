@@ -44,3 +44,5 @@ python3 -m http.server 8768 --bind 127.0.0.1 --directory docs
 推送公开仓库 `main` 后，GitHub Actions 自动将 `docs/` 发布到 Pages；不调用大模型、不需要 Node 编译。复用 GitHub 官方模板，来源、许可与固定版本见 [HOSTING.md](docs/HOSTING.md)，后续编辑和回滚见 [维护说明](docs/MAINTENANCE.md)。私有仓库更新不会自动同步。
 
 根据用户要求，每轮相关开发／文档工作均应实际邀请 CodeArts 承担有意义的小范围任务，遵循 [AGENTS.md](AGENTS.md)，使用已验证的福利入口并保留真实产出。额度或登录不可用时如实沟通，不切付费模型；纯机械检查不制造贡献。每次 GitHub 自动发布无需人工调用 AI。
+
+当前公开应用依赖有 GitHub 告警，尚未在本轮修复；见 [依赖状态](docs/DEPENDENCY_STATUS.md)。静态成果站不加载或安装这些应用依赖。

@@ -17,7 +17,7 @@
 
 评测切换：墙体 80%、15 个用例含 3 次碰撞；侧箱 100%，失败用例详情可查看。历史结果保留，没有在线任务或模型请求。[公网机器记录](validation/static-site-live.json)与[本机页面记录](validation/static-site.json)分开保存。
 
-本记录首次上线后更新并再次推送，更新由同一 main/push 工作流自动发布。以 [Actions 历史](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/workflows/pages.yml)查看每次推送的实际结果，不需要人工调用大模型发布。
+第二次更新提交 `cd035fc63f4770b56ad73a1e6eecc2d7e4a08626` 的 [push 工作流 39195012205](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39195012205)也已 success；公网已返回更新后的“静态展示已上线”文案，确认推送更新可以自动生效。以 [Actions 历史](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/workflows/pages.yml)查看每次推送的实际结果，不需要人工调用大模型发布。
 
 ## 范围与来源
 
@@ -26,3 +26,8 @@
 [官方 Actions 模板与固定版本](HOSTING.md)、[CodeArts 两轮真实贡献](codearts-evidence.md)、[发布前检查](validation/release-preflight.json)、[公开范围](RELEASE_SCOPE.md)均随仓库提供。
 
 本次只发布静态成果和许可明确的源码子集，未创建付费云资源、未调用华为视觉模型、未运行机器人或新跑真实仿真。华为云 Skills 服务关联、华为云业务部署与完整作品开源／复现仍未由本次发布解决。
+
+
+## 发布后依赖检查
+
+GitHub 后续发现应用前端依赖告警，另见 [依赖快照](DEPENDENCY_STATUS.md)。本轮静态发布不运行这些应用依赖，未对其升级；仍需要独立核查与修复，不能以本次部署成功消除告警。

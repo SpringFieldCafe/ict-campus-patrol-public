@@ -1,0 +1,37 @@
+{
+  "observed_utc": "2026-10-19T03:32:43.333746+00:00",
+  "source": "GitHub Dependabot alerts API; open state snapshot",
+  "alert_records": 61,
+  "unique_advisories": 41,
+  "severity_records": {
+    "low": 1,
+    "high": 35,
+    "medium": 23,
+    "critical": 2
+  },
+  "manifests": {
+    "apps/web/pnpm-lock.yaml": 47,
+    "apps/web/package.json": 14
+  },
+  "critical": [
+    {
+      "package": "tinypool",
+      "scope": "development",
+      "ghsa": "GHSA-5gmw-xhrv-c9v3",
+      "url": "https://github.com/advisories/GHSA-5gmw-xhrv-c9v3",
+      "first_patched_version": {
+        "identifier": "2.1.1"
+      }
+    },
+    {
+      "package": "tinypool",
+      "scope": "development",
+      "ghsa": "GHSA-85c8-ppgw-ccpr",
+      "url": "https://github.com/advisories/GHSA-85c8-ppgw-ccpr",
+      "first_patched_version": {
+        "identifier": "2.1.2"
+      }
+    }
+  ],
+  "interpretation": "Dependency declarations and lockfile alerts may duplicate advisories. Application exploitability has not been evaluated. Static docs site and its deployment do not install or load these frontend dependencies. No dependency changes in this publication task."
+}
