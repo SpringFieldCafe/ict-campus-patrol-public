@@ -45,4 +45,4 @@ python3 -m http.server 8768 --bind 127.0.0.1 --directory docs
 
 根据用户要求，每轮相关开发／文档工作均应实际邀请 CodeArts 承担有意义的小范围任务，遵循 [AGENTS.md](AGENTS.md)，使用已验证的福利入口并保留真实产出。额度或登录不可用时如实沟通，不切付费模型；纯机械检查不制造贡献。每次 GitHub 自动发布无需人工调用 AI。
 
-当前公开应用依赖有 GitHub 告警，尚未在本轮修复；见 [依赖状态](docs/DEPENDENCY_STATUS.md)。静态成果站不加载或安装这些应用依赖。
+前端依赖修复与验证见 [依赖状态](docs/DEPENDENCY_STATUS.md)：本地审计63→1，仍有无补丁的braces告警；GitHub默认分支状态按合入后扫描另核。静态成果站不加载或安装这些应用依赖。

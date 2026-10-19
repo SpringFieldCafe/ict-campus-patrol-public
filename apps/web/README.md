@@ -59,3 +59,7 @@ bash apps/web/run.sh build
 ## 顺序 checkpoint 仿真
 
 后端 capabilities 提供仿真路线时，工作台默认选择 `checkpoints-simple`；也可改为“单个观察点”。路线卡片显示按序点位与到点半径，任务进度显示已完成数／总点数。路线只用于仿真，不改变实机观察点配置。公开仓库保留示例路线与接口，执行实现和模型需操作者另行取得使用授权；仅看到路线不表示仿真已配置。范围见 [仿真说明](../../edge/go2/simulation/README.md)，历史结果见 [演示证据](../../docs/demo.md)。
+
+## 依赖维护与自动检查
+
+2026-10-19公开副本的依赖修复与剩余风险见 [记录](../../docs/DEPENDENCY_REPAIR.md)。新增前端CI复用GitHub官方Node模板，对apps/web或工作流改动做锁定安装、生产构建与测试；[来源与范围](../../docs/FRONTEND_CI.md)。原私有导航／仿真环境不自动同步更新。

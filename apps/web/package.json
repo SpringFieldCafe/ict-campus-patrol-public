@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.3.2",
-    "axios": "1.18.1",
+    "axios": "1.20.0",
     "dayjs": "1.11.21",
     "element-plus": "2.14.2",
     "lodash-es": "4.18.1",
@@ -28,9 +28,8 @@
     "path-to-regexp": "8.4.2",
     "pinia": "3.0.4",
     "screenfull": "6.0.2",
-    "vue": "3.5.39",
-    "vue-router": "5.1.0",
-    "vxe-table": "4.6.25"
+    "vue": "3.5.42",
+    "vue-router": "5.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "9.1.0",
@@ -53,7 +52,7 @@
     "unplugin-vue-components": "32.1.0",
     "vite": "7.3.6",
     "vite-svg-loader": "5.1.1",
-    "vitest": "4.1.10",
+    "vitest": "4.1.11",
     "vue-tsc": "3.3.7"
   },
   "lint-staged": {
@@ -63,5 +62,25 @@
   "packageManager": "pnpm@10.34.0",
   "engines": {
     "node": ">=22.12.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "tinypool@<2.1.2": "2.1.2",
+      "source-map-js@<1.2.2": "1.2.2",
+      "postcss-selector-parser@<7.1.6": "7.1.6",
+      "js-yaml@>=4.0.0 <4.3.2": "4.3.2",
+      "svgo@>=2.0.0 <2.8.4": "2.8.4",
+      "svgo@>=3.0.0 <3.3.5": "3.3.5",
+      "@xmldom/xmldom@>=0.7.0 <0.8.15": "0.8.15",
+      "baseline-browser-mapping@>=2.0.0 <2.11.0": "2.11.0",
+      "browserslist@>=4.0.0 <4.28.7": "4.28.7",
+      "nanoid@>=3.0.0 <3.3.18": "3.3.18",
+      "postcss@>=8.0.0 <8.5.23": "8.5.23",
+      "glob@>=10.2.0 <10.5.0": "10.5.0",
+      "katex@>=0.11.0 <0.18.2": "0.18.2",
+      "brace-expansion@>=1.0.0 <1.1.21": "1.1.21",
+      "brace-expansion@>=2.0.0 <2.1.7": "2.1.7",
+      "brace-expansion@>=5.0.0 <5.0.12": "5.0.12"
+    }
   }
 }

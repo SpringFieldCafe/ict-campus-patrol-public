@@ -35,3 +35,21 @@ Codex 已实际核对四个 Action 主版本标签对应 SHA，保留官方模�
 原回答中“直接打开 docs/index.html”可能因 file:// 的 fetch 限制无法加载交互 JSON，README 保留已验证的本地 HTTP 预览方式；没有照搬这一建议。“无密钥”指无需用户提供外部密钥，GitHub 自动 GITHUB_TOKEN/OIDC 仍按官方流程使用。原稿中的图片边界补为未经授权的真实人员影像。Actions 直接打包静态文件，没有 Jekyll 步骤；`.nojekyll` 已存在，但不是依赖它绕过此流程的构建。
 
 **归属：** CodeArts 完成静态审查与维护／协作文稿；Codex 下载模板、核对版本、应用文件、浏览器 QA、创建仓库并执行部署。GitHub Actions 执行后续发布，不在每次推送时调用 CodeArts。首次部署结果以 [发布记录](PUBLICATION.md) 为准，不把审查意见当作部署成功证据。
+
+## 2026-10-19：前端依赖配置主笔与修复审查
+
+用户确认在独立分支修复公开仓库前端依赖，与华为智能体合作。CodeArts 通过固定福利模型实际生成完整 package.json、四个未使用 Vxe 文件的删除清单、十项审查意见及 DEPENDENCY_REPAIR 初稿；不是只登记一次工具名。
+
+[请求](codearts/2026-10-19-dependency-repair-request.md)、[原回答](codearts/2026-10-19-dependency-repair-response.txt)、[精选回执](codearts/2026-10-19-dependency-repair-receipt.json)保留原字节哈希。模型权限 deny、零工具调用；它没有亲自编辑或安装依赖、生成锁文件、执行测试或操作 GitHub。
+
+Codex 核对实际包内容与请求相符后应用配置和删除清单，更新上游改造说明，再由 pnpm 解析锁定结果。CodeArts 提醒 brace-expansion 的建议选择范围包含 4→5 的潜在跨主版本覆盖；Codex 将该项收窄为 >=5.0.0 <5.0.12，当前锁中原本只有5.x，不再覆盖4.x。其他包配置来自原回答；实际测试和结果由 Codex 单独记录。
+
+本次包配置、移除清单和修复说明由 CodeArts 主笔。版本/API/实际使用核对、环境隔离、模板适配、删除与锁更新、回归运行和GitHub操作由Codex完成。原稿保持验证计划语态，最终实测见 [依赖修复记录](DEPENDENCY_REPAIR.md)。
+
+CodeArts 另实际审查新增前端CI并主笔其说明段落：[请求](codearts/2026-10-19-dependency-ci-request.md)、[回答](codearts/2026-10-19-dependency-ci-response.txt)、[回执](codearts/2026-10-19-dependency-ci-receipt.json)。Codex 采纳修正官方原注释的建议，将多版本表述改为Node24；未把静态审查当作已经通过GitHub执行。
+
+### 实际构建失败后的源码修正
+
+Axios1.20使原request泛型封装触发TS2322。CodeArts根据实际报错和已安装的条件类型声明，生成局部 `as Promise<T>` 修正及注释；[请求](codearts/2026-10-19-axios-type-request.md)、[原回答](codearts/2026-10-19-axios-type-response.txt)、[回执](codearts/2026-10-19-axios-type-receipt.json)归档。Codex核对拦截器确实返回response.data后应用，没有禁用类型检查或降级Axios。
+
+人工校正：将原稿“R=T在运行时成立”的注释压缩为拦截器返回payload与新条件类型未收敛的事实，避免把类型参数当作运行时值；原回答理由末尾误将braces漏洞归给旧Axios，未采纳。braces属于SVG构建链，Axios修复其自身公告，两者分别记录。源码的类型断言修正由CodeArts生成，实际应用、测试与构建由Codex执行。

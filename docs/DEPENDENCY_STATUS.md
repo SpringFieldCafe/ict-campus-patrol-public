@@ -1,16 +1,15 @@
-# 应用依赖告警快照
+# 应用依赖状态
 
-2026-10-19，GitHub 对本公开仓库报出 **61 条未关闭依赖告警记录**，包括 2 critical、35 high、23 medium、1 low；共 **41 个不同 GHSA**，声明与锁文件可能重复计数。来源为 GitHub Dependabot API，不是本项目漏洞利用验证结果。
+2026-10-19，在独立修复分支完成本地前端验证：pnpm10.34.0审计从63条降到1条（0 critical、1 high）。22项测试、类型检查与生产构建、桌面／手机接口替身检查均通过。剩余为无已公布补丁的 [braces GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)，没有通过忽略规则归零。
 
-当前记录均指向 `apps/web/package.json` 或 `apps/web/pnpm-lock.yaml`。两项 critical 对应开发依赖 tinypool（当前锁定 2.1.0）：
+GitHub默认分支的原61条告警是否关闭，须以合入后实际扫描为准；本分支本地结果不能替代GitHub状态。最新过程与验证见 [依赖修复记录](DEPENDENCY_REPAIR.md)、[机器记录](validation/dependency-repair.json)。
 
-- [GHSA-5gmw-xhrv-c9v3](https://github.com/advisories/GHSA-5gmw-xhrv-c9v3)，API 列出的首个修复版本 2.1.1。
-- [GHSA-85c8-ppgw-ccpr](https://github.com/advisories/GHSA-85c8-ppgw-ccpr)，API 列出的首个修复版本 2.1.2。
+## 保留初始快照
 
-是否能在本项目触发、直接／传递依赖应如何升级，需要独立核查；不把“测试通过”当作没有漏洞，也不把每条声明告警视为已证实的应用可利用问题。本次没有升级依赖、修改原导航／仿真环境或关闭告警。
+公开首发时GitHub报61条告警记录，2 critical、35 high、23 medium、1 low，对应41个不同GHSA；包声明与锁文件可能重复计数。[初始快照](validation/dependency-alerts.json)保持原样，不能与pnpm的63条基线混用。两项critical来自eslint-plugin-format→oxfmt→tinypool2.1.0，本轮覆盖为2.1.2；不是Vitest直接依赖。
 
-GitHub Pages 只部署 `docs/` 原生 HTML/CSS/JS/图片/JSON；工作流不安装前端依赖，也不部署 `apps/web/dist`。上述告警属于另一套 Vue 工作台源码；这一区分不替代后续对应用依赖的修复。
+Vxe Table尚无可信修复版本，本项目移除了未使用的示例、插件、专用样式及依赖，不把升级出公告范围当作漏洞已修复。实际业务路由不使用它。
 
-建议单独开分支核对锁定版本、上游公告与实际用途，按最小改动修复，再运行前端测试／类型检查／生产构建。原私有仓保留其已验证环境，是否同步修复另行明确。
+GitHub Pages只部署docs中的静态文件，不安装或加载这些应用依赖；这一区分不替代对源码依赖的维护。原私有导航／仿真环境没有升级。
 
-[机器可读快照](validation/dependency-alerts.json)保存统计及两个公开公告。管理者可在 [Dependabot 告警页](https://github.com/SpringFieldCafe/ict-campus-patrol-public/security/dependabot)查看完整记录。漏洞反馈见 [SECURITY.md](../SECURITY.md)。
+管理者可查看 [GitHub Dependabot](https://github.com/SpringFieldCafe/ict-campus-patrol-public/security/dependabot)。漏洞反馈见 [SECURITY.md](../SECURITY.md)。

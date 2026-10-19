@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-19",
+  "scope": "public frontend dependency branch",
+  "branch": "fix/frontend-dependency-alerts-20261019",
+  "base_commit": "b032b032b32ff282c58146954c8237a988d3cbfe",
+  "pnpm": "10.34.0",
+  "node": "24.22.0",
+  "private_environment_changed": false,
+  "frontend_tests": {
+    "passed": 22,
+    "files": 4
+  },
+  "build": {
+    "initial_status": "failed",
+    "initial_cause": "Axios 1.20 conditional generic response type TS2322",
+    "fix": "CodeArts generated one type assertion at the response.data wrapper boundary; Codex clarified its comment and applied it",
+    "typescript": "passed",
+    "vite": "passed"
+  },
+  "audit_before": {
+    "info": 0,
+    "low": 1,
+    "moderate": 17,
+    "high": 43,
+    "critical": 2
+  },
+  "audit_after": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 1,
+    "critical": 0
+  },
+  "remaining_advisory": "GHSA-vfj7-8cjw-p6xm",
+  "overrides_compatibility": {
+    "date": "2026-10-19",
+    "status": "passed",
+    "scope": "installed dependency compatibility and focused behavior checks; synthetic local inputs only",
+    "checks": [
+      "micromark math extension renders KaTeX 0.18.2 output",
+      "KaTeX inherited trust option does not enable an active link; explicit own trust still does",
+      "Tinypool 2.1.2 starts a worker and completes a synthetic task"
+    ],
+    "external_network_requests": 0,
+    "robot_commands": 0
+  },
+  "status": "local_checks_passed_with_one_unpatched_build_dependency",
+  "browser": {
+    "date": "2026-10-19",
+    "kind": "PRODUCTION_FRONTEND_WITH_API_FIXTURES",
+    "scope": "synthetic API transport only; no backend credentials/robot/cloud requests",
+    "checks": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "login": true,
+        "console": true,
+        "disabled_unconfigured_execution": true,
+        "history": true,
+        "project": true,
+        "refresh_retains_session": true,
+        "login_posts": 1,
+        "task_or_model_posts": 0
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "login": true,
+        "console": true,
+        "disabled_unconfigured_execution": true,
+        "history": true,
+        "project": true,
+        "refresh_retains_session": true,
+        "login_posts": 1,
+        "task_or_model_posts": 0
+      }
+    ],
+    "page_errors": [],
+    "unexpected_api": [],
+    "external_requests": [],
+    "status": "passed"
+  },
+  "environment": {
+    "node": "24.22.0",
+    "pnpm": "10.34.0",
+    "pnpm_integrity": "official npm tarball SHA512 verified",
+    "install": "fresh independent node_modules and project-local pnpm store; frozen lockfile",
+    "ignored_dependency_build_scripts": [
+      "@parcel/watcher@2.5.6",
+      "esbuild@0.27.2"
+    ],
+    "original_dependency_tool": "10.34.7 remained unchanged; not used to install repaired tree"
+  },
+  "private_integrity": {
+    "tracked_files_compared": 441,
+    "unchanged": true,
+    "dependency_and_tool_metadata_files_compared": 3,
+    "unchanged_dependency_metadata": true
+  },
+  "remaining": [
+    {
+      "package": "braces",
+      "version": "3.0.3",
+      "severity": "high",
+      "ghsa": "GHSA-vfj7-8cjw-p6xm",
+      "patched_version": null,
+      "action": "retained and documented; no audit ignore or manual alert dismissal",
+      "checked_path": "unplugin-svg-component > fast-glob > micromatch > braces",
+      "scope_limit": "Checked plugin uses repository-controlled literal globs; broader exploitability not established."
+    }
+  ],
+  "github_default_branch": {
+    "baseline_alert_records": 61,
+    "baseline_unique_ghsa": 41,
+    "after": "pending_merge_and_rescan"
+  },
+  "source_sha256": {
+    "apps/web/package.json": "324445ca3b8e00af5e6c726c191f042ae3ca32f6f6084a9730354da7823ffced",
+    "apps/web/pnpm-lock.yaml": "36824e4cde7d35ce6949d10b56cd9e55f06d8837923b55cdd99185397b1315b6",
+    "apps/web/src/http/axios.ts": "f835201af2528108695dc7af6d370f7e5eaa43f4f28a43eceffa5516c173ce76",
+    ".github/workflows/frontend.yml": "4408ec588adce85580dcd4dfffeb08be51d55e3d8ceb1fc36e59fb9fa74f1d94"
+  }
+}

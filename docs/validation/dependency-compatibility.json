@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-19",
+  "status": "passed",
+  "scope": "installed dependency compatibility and focused behavior checks; synthetic local inputs only",
+  "checks": [
+    "micromark math extension renders KaTeX 0.18.2 output",
+    "KaTeX inherited trust option does not enable an active link; explicit own trust still does",
+    "Tinypool 2.1.2 starts a worker and completes a synthetic task"
+  ],
+  "external_network_requests": 0,
+  "robot_commands": 0
+}

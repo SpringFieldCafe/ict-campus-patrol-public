@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-19",
+  "kind": "PRODUCTION_FRONTEND_WITH_API_FIXTURES",
+  "scope": "synthetic API transport only; no backend credentials/robot/cloud requests",
+  "checks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "login": true,
+      "console": true,
+      "disabled_unconfigured_execution": true,
+      "history": true,
+      "project": true,
+      "refresh_retains_session": true,
+      "login_posts": 1,
+      "task_or_model_posts": 0
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "login": true,
+      "console": true,
+      "disabled_unconfigured_execution": true,
+      "history": true,
+      "project": true,
+      "refresh_retains_session": true,
+      "login_posts": 1,
+      "task_or_model_posts": 0
+    }
+  ],
+  "page_errors": [],
+  "unexpected_api": [],
+  "external_requests": [],
+  "status": "passed"
+}
