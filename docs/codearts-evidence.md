@@ -53,3 +53,5 @@ CodeArts 另实际审查新增前端CI并主笔其说明段落：[请求](codear
 Axios1.20使原request泛型封装触发TS2322。CodeArts根据实际报错和已安装的条件类型声明，生成局部 `as Promise<T>` 修正及注释；[请求](codearts/2026-10-19-axios-type-request.md)、[原回答](codearts/2026-10-19-axios-type-response.txt)、[回执](codearts/2026-10-19-axios-type-receipt.json)归档。Codex核对拦截器确实返回response.data后应用，没有禁用类型检查或降级Axios。
 
 人工校正：将原稿“R=T在运行时成立”的注释压缩为拦截器返回payload与新条件类型未收敛的事实，避免把类型参数当作运行时值；原回答理由末尾误将braces漏洞归给旧Axios，未采纳。braces属于SVG构建链，Axios修复其自身公告，两者分别记录。源码的类型断言修正由CodeArts生成，实际应用、测试与构建由Codex执行。
+
+交付验证补记：上述依赖与源码修复已通过 [PR #2](https://github.com/SpringFieldCafe/ict-campus-patrol-public/pull/2)合入。PR/main前端CI与Pages均实际success，GitHub原61条告警全部匹配fixed、当前open为0；pnpm仍有1项无补丁braces，不能称所有漏洞解决。执行结果由Codex核验，CodeArts没有亲自运行CI或部署。

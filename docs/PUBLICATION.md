@@ -31,3 +31,7 @@
 ## 发布后依赖检查
 
 GitHub 后续发现应用前端依赖告警，另见 [依赖快照](DEPENDENCY_STATUS.md)。本轮静态发布不运行这些应用依赖，未对其升级；仍需要独立核查与修复，不能以本次部署成功消除告警。
+
+## 前端依赖后续维护
+
+2026-10-19依赖修复[PR #2](https://github.com/SpringFieldCafe/ict-campus-patrol-public/pull/2)已合入，新增官方Node模板改编的前端回归CI；PR/main构建测试通过，Pages自动发布通过。GitHub最初61条均fixed，当前open=0；pnpm仍有1项无补丁braces，见[依赖修复](DEPENDENCY_REPAIR.md)与[合入后核对](validation/dependency-github-after.json)。

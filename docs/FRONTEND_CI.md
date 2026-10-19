@@ -15,3 +15,7 @@ main push 和目标 main 的 pull_request 在改动 apps/web 或本工作流时�
 该段由 CodeArts 主笔、Codex 核对应用。其“pnpm先安装”的说明仅针对当前启用pnpm缓存的步骤顺序，不是所有CI的唯一顺序。PR权限与配置审查不代表任意PR代码已被证明安全。
 
 Codex 在审查后为 push／PR 补充 apps/web 与该工作流本身的路径过滤，纯成果文档更新继续只走 Pages；本次修复包含 apps/web 变更，会触发回归。
+
+## 已执行验证
+
+[PR运行39200901434](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39200901434)与[main运行39201120737](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39201120737)均success，包含frozen安装、TypeScript/Vite生产构建和22项测试。纯文档更新按路径过滤跳过此前端检查，仍自动发布Pages。

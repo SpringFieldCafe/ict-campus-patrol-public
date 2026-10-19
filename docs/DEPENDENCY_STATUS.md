@@ -2,7 +2,7 @@
 
 2026-10-19，在独立修复分支完成本地前端验证：pnpm10.34.0审计从63条降到1条（0 critical、1 high）。22项测试、类型检查与生产构建、桌面／手机接口替身检查均通过。剩余为无已公布补丁的 [braces GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)，没有通过忽略规则归零。
 
-GitHub默认分支的原61条告警是否关闭，须以合入后实际扫描为准；本分支本地结果不能替代GitHub状态。最新过程与验证见 [依赖修复记录](DEPENDENCY_REPAIR.md)、[机器记录](validation/dependency-repair.json)。
+[PR #2](https://github.com/SpringFieldCafe/ict-campus-patrol-public/pull/2)已合入，GitHub API确认原61条全部为fixed，当前open为0；没有手动关闭告警。GitHub与pnpm口径不同，GitHub归零不等于braces已修复。[合入后快照](validation/dependency-github-after.json)保留核对结果。最新过程与验证见 [依赖修复记录](DEPENDENCY_REPAIR.md)、[机器记录](validation/dependency-repair.json)。
 
 ## 保留初始快照
 

@@ -97,9 +97,12 @@
   },
   "private_integrity": {
     "tracked_files_compared": 441,
-    "unchanged": true,
     "dependency_and_tool_metadata_files_compared": 3,
-    "unchanged_dependency_metadata": true
+    "unchanged_dependency_metadata": true,
+    "unchanged_before_contribution_ledger_append": true,
+    "later_documentation_updates": [
+      "docs/codearts-evidence.md"
+    ]
   },
   "remaining": [
     {
@@ -116,7 +119,10 @@
   "github_default_branch": {
     "baseline_alert_records": 61,
     "baseline_unique_ghsa": 41,
-    "after": "pending_merge_and_rescan"
+    "current_open_records": 0,
+    "baseline_confirmed_fixed": 61,
+    "proof": "dependency-github-after.json",
+    "merge_commit": "22401e9ebb990544914963c52ed5f59c1844f5fe"
   },
   "source_sha256": {
     "apps/web/package.json": "324445ca3b8e00af5e6c726c191f042ae3ca32f6f6084a9730354da7823ffced",

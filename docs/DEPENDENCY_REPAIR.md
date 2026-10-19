@@ -1,6 +1,6 @@
 # 前端依赖修复记录
 
-本轮在独立公开仓分支完成本地修复验证：**22 项前端测试、TypeScript／Vite 构建、桌面／手机生产页面检查通过**。同一 pnpm10.34.0 审计从 **63 条降为 1 条**，critical 从 2 降为 0；仍有一个上游无补丁的 braces high 告警。GitHub 默认分支原61条记录的关闭状态须等合入与扫描后核验，不能用本地计数替代。
+本轮在独立公开仓分支完成本地修复验证：**22 项前端测试、TypeScript／Vite 构建、桌面／手机生产页面检查通过**。同一 pnpm10.34.0 审计从 **63 条降为 1 条**，critical 从 2 降为 0；仍有一个上游无补丁的 braces high 告警。PR #2已合入，GitHub原61条均确认为fixed、当前open为0；GitHub与pnpm是不同口径，仍保留上述braces风险。
 
 下面方案正文由 CodeArts 主笔，保留其审查时的计划语态；实际结果与人工校正见文末。
 
@@ -45,3 +45,14 @@ braces@3.0.3（GHSA-vfj7-8cjw-p6xm）当前无修复版本，路径 unplugin-svg
 [braces公告](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm)当前没有公布修复版本；[上游讨论](https://github.com/micromatch/braces/issues/70)仍未形成可核验的已发布补丁。已检查的SVG插件路径使用固定扩展名模式与固定图标目录，未发现任务文本、网页请求或API参数直接进入glob模式；这不证明整个工具链不可利用。保留该告警，不加入audit忽略、不手动关闭GitHub告警、不把公告范围之外的版本当作已证实修复。
 
 新增前端CI复用官方Node模板，[来源与适配](FRONTEND_CI.md)保留；GitHub执行结果随后单独记录。静态Pages继续由原官方Pages工作流发布，本轮不新增云服务或模型调用。
+
+## GitHub 实际交付
+
+[PR #2](https://github.com/SpringFieldCafe/ict-campus-patrol-public/pull/2)已合入，合并提交 `22401e9ebb990544914963c52ed5f59c1844f5fe`。
+
+- [PR前端CI 39200901434](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39200901434)：独立锁定安装、生产构建和22项测试success。
+- [main前端CI 39201120737](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39201120737)：合入后同样success。
+- [main Pages 39201120710](https://github.com/SpringFieldCafe/ict-campus-patrol-public/actions/runs/39201120710)：success，公网修复报告JSON与提交文件逐字节匹配。
+- 合入后GitHub分别查询open与fixed：当前open=0，最初61条全部在fixed结果中匹配，fixed时间为北京时间2026-10-19约12:46。没有通过手动dismiss关闭；[机器快照](validation/dependency-github-after.json)可核对。
+
+本机公开main已同步源代码并放入测试通过的新前端构建；此前指向原私有node_modules的临时软链接已移除，旧生成构建仅移到本机忽略区备份，原私有依赖没有变化。原私有仓仅追加真实贡献台账。
